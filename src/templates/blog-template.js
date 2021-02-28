@@ -27,7 +27,7 @@ const ComponentName = ({ data }) => {
           <div className="article-header">
             <div>
               <h1>{ data.blog.title }</h1>
-              <em>{ data.blog.date }</em>
+              <em className="em-bt">{ data.blog.date }</em>
             </div>
           </div>
           <br/>

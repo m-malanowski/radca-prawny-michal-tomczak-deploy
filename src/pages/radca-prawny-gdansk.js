@@ -33,7 +33,20 @@ const variants =  {
 }
 
 const ProjectsPage = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kancelaria Radcy Prawnego Michał Tomczak",
+    "alternateName": "Radca Prawnyy Gdańsk",
+    "url": "https://radcaprawnytomczak.pl",
+    "logo": "https://radcaprawnytomczak.pl/facebook.jpg",
+    "sameAs": [
+      "https://www.google.com/maps/d/u/0/edit?mid=1q5MkFFkEu_U21aiml_JCm_ny1CzfDLhD&usp=sharing",
+    ]
+  }
+
   // const ref2 = useRef(null)
+
   const controls = useAnimation();
   const controls2 = useAnimation();
 
@@ -51,7 +64,7 @@ const ProjectsPage = () => {
 
 return (
  <>
-   <SEO title="⚖️ &nbsp; O Kancelarii | Porady Prawne Gdańsk. Radca Prawny Gdańsk" description="Zadzwoń ☎ 507 455 057. Radca Prawny Gdańsk - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk"/>
+   <SEO title="⚖️ &nbsp; O Kancelarii | Porady Prawne Gdańsk. Radca Prawny Gdańsk" description="Zadzwoń ☎ 507 455 057. Radca Prawny Gdańsk - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk"   schemaMarkup={schema}/>
 
    <div className="about-page">
       <Subheader pageTitle={'Kancelaria Radcy Prawnego Michał Tomczak '} subImg={subHeaderPhoto}/>

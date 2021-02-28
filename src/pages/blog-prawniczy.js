@@ -3,7 +3,7 @@ import Image from "gatsby-image"
 import { graphql, Link } from "gatsby"
 import Subheader from "../components/Subheader"
 import Footer from "../components/Footer"
-import subHeaderPhoto from "../assets/imgs/home-slider/home-11.jpg"
+import subHeaderPhoto from "../assets/imgs/home-slider/home-6.jpg"
 import ButtonRight from "../components/CtaButton"
 import SEO from "../components/SEO"
 

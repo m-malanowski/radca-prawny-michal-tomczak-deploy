@@ -210,6 +210,12 @@ ul > li {
 em {
   color: var(--clr-primary-15);
   font-style: normal;
+  //font-family: var(--ff-secondary);
+  //font-weight: bold;
+}
+em.em-bt{
+  font-family: var(--ff-secondary);
+  letter-spacing: var(--spacing-menu-links);
 }
 
 h1.page-title em, h2.page-title em {
@@ -440,8 +446,8 @@ footer {
   //background-color: #012754;
   //background-color: var(--clr-primary-4);
   //background-image: radial-gradient(#012754, #011f43);
-  background: #06112d;
-
+  //background: #06112d;
+  background-color: var(--clr-primary-4);
   padding: 5.25rem 0;
   overflow: hidden;
 }
@@ -1204,16 +1210,15 @@ ul.services-titles {
   li {
     padding: 1rem 0;
     & h5 {
-      color: var(--clr-primary-15);
+      color: var(--clr-primary-4);
       margin: 0;
       padding: 0;
       font-weight: normal;
-
     }
   }
   li.active:before{
     content: '';
-    background-color: var(--clr-primary-5);
+    background-color: var(--clr-primary-4);
     position: absolute;
     left: 6px;
     height: 3.25rem;
@@ -1231,13 +1236,17 @@ ul.services-titles {
     //content: "\2022";
     counter-increment: services;
     content: counter(services, decimal-leading-zero);
-    color: var(--clr-primary-15);
+    color: var(--clr-primary-4);
     //font-weight: bold;
     //display: inline-block;
     width: 1em;
     margin-right: 1.5rem;
     //margin-left: -1em;
   }
+}
+
+.service-cont{
+  padding-bottom: 7.5rem;
 }
 
 .single-service {
@@ -1340,11 +1349,13 @@ Page Contact
     object-position: center top;
   }
 
-  background-image: radial-gradient(#012754, #011f43);
+  //background-image: radial-gradient(#012754, #011f43);
+  background-color: var(--clr-primary-4);
+
   overflow: hidden;
 
   svg {
-    margin-right: .5rem;
+    margin-right: 1rem;
     fill: rgba(67, 151, 248, .65);
     transform: translateY(.1rem);
   }
@@ -2249,10 +2260,10 @@ Button2
   }
 
   a:hover {
-    svg {
-      -webkit-filter: drop-shadow(3px 3px 6px var(--clr-primary-4));
-      filter: drop-shadow(3px 3px 6px var(--clr-primary-4));
-    }
+    //svg {
+      //-webkit-filter: drop-shadow(3px 3px 6px var(--clr-primary-4));
+      //filter: drop-shadow(3px 3px 6px var(--clr-primary-4));
+    //}
     span {
       transform: translateX(.5rem)
     }

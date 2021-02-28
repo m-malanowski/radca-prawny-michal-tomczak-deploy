@@ -54,7 +54,7 @@ const kontakt = () => (
             <svg width="15" height="15" viewBox="0 0 1024 1024">
               <path d={icons.phone}/>
             </svg>
-             + 48 507 455 057
+            <a className="link-hover" href="tel: + 48 507 455 057">+ 48 507 455 057</a>
           </motion.p>
           <ul >
             <motion.li variants={variants} initial="initial" animate="enter" exit="exit">Księdza Robaka 1</motion.li>
