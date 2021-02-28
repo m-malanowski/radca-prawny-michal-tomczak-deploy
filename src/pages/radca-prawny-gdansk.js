@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from "react"
 // import { useIntersection } from "react-use"
 import Layout from "../components/Layout"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/home-20.jpg"
+import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-1.jpg"
 import aboutImg1 from "../assets/imgs/aboutImg1.jpeg";
 import aboutImg2 from "../assets/imgs/home-slider/1.png";
 import Footer from "../components/Footer"
@@ -93,7 +93,7 @@ return (
         <div className="page-description-wrapper">
             <div className="image-subsection image-subsection__right">
                 <motion.img
-                  src={aboutImg1} alt=""
+                  src={aboutImg2} alt=""
                   ref={ref}
                   animate={controls}
                   initial="hidden"

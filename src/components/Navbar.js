@@ -1,8 +1,7 @@
 import React from "react"
-import logo from "../assets/imgs/logo4.png"
-import { FaAlignRight } from "react-icons/fa"
+import logo from "../assets/imgs/logoNowe.png"
 import PageLinks from "../constants/links"
-import { AnimatePresence, motion } from "framer-motion"
+import {  motion } from "framer-motion"
 const Navbar = ({toggleSideBar, isOpen}) => {
   return (
     <nav className="navbar">

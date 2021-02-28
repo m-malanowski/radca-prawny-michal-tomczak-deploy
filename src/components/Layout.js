@@ -1,5 +1,7 @@
 import React from "react"
 // import "../css/main.css"
+import "../css/bootstrap-grid.css"
+import "../css/styles.scss"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"

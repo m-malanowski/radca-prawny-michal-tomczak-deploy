@@ -7,7 +7,7 @@ import Blogs from "../components/Blogs"
 import Subheader from "../components/Subheader"
 import MainPageSlider2 from "../components/MainPageSlider"
 import { motion } from "framer-motion"
-import logo from "../assets/imgs/tomczakNoweLogo.png"
+import logo from "../assets/imgs/logoNowe.png"
 import SEO from "../components/SEO"
 // export default () => {
 //   return <Layout>

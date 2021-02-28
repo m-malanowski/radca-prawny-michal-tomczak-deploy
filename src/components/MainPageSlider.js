@@ -1,9 +1,9 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css";
-import img1 from "../assets/imgs/home-slider/home-20.jpg"
-import img2 from "../assets/imgs/home-slider/home-6.jpg"
-import img3 from "../assets/imgs/home-slider/home-19.jpg"
+import img1 from "../assets/imgs/home-slider/radca-prawny-gdansk-1.jpg"
+import img2 from "../assets/imgs/home-slider/radca-prawny-gdansk-3.jpg"
+import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5.jpg"
 import Button from "../components/CtaButton"
 import { motion, useAnimation } from "framer-motion"
 const icons = {
@@ -16,7 +16,7 @@ const images = [
     title: "Kompleksowa obsługa prawna klientów indywidualnych i przedsiębiorców. Kancelaria Radcy Prawnego Michał  ",
     // beforeTitle: "Adwkoat Gdynia - Szymon Mikulak ",
     buttonText: "O kancelarii",
-    url: "/adwokat-gdynia",
+    url: "/radca-prawny-gdansk",
     id: 1,
   },
   {
@@ -75,8 +75,8 @@ const MainPageSlider = (props) => {
   const controls = useAnimation()
   // const controls2 = useAnimation()
   const [currentSlide, setCurrentSlide] = React.useState(0)
-  // const [pause, setPause] = React.useState(false)
-  // const timer = React.useRef()
+  const [pause, setPause] = React.useState(false)
+  const timer = React.useRef()
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
@@ -113,16 +113,16 @@ const MainPageSlider = (props) => {
 
   })
 
-  // React.useEffect(() => {
-  //   timer.current = setInterval(() => {
-  //     if (!pause && slider) {
-  //       slider.next()
-  //     }
-  //   }, 8000)
-  //   return () => {
-  //     clearInterval(timer.current)
-  //   }
-  // }, [pause, slider])
+  React.useEffect(() => {
+    timer.current = setInterval(() => {
+      if (!pause && slider) {
+        slider.next()
+      }
+    }, 8000)
+    return () => {
+      clearInterval(timer.current)
+    }
+  }, [pause, slider])
 
 
   function positionStyle(idx) {
