@@ -1,12 +1,12 @@
 import React from "react"
 // import "../css/main.css"
-import "../css/bootstrap-grid.css"
-import "../css/styles.scss"
+// import "../css/bootstrap-grid.css"
+// import "../css/styles.scss"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
-import Footer from "./Footer"
+// import Footer from "./Footer"
 import { motion, AnimatePresence } from "framer-motion"
-import logo from "../assets/imgs/tomczakNoweLogo.png"
+// import logo from "../assets/imgs/tomczakNoweLogo.png"
 
 const duration = 1
 const durationExit = .4

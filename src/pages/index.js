@@ -1,26 +1,8 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import Jobs from "../components/Jobs"
-import Projects from "../components/Projects"
-import Blogs from "../components/Blogs"
-import Subheader from "../components/Subheader"
 import MainPageSlider2 from "../components/MainPageSlider"
 import { motion } from "framer-motion"
 import logo from "../assets/imgs/logoNowe.png"
 import SEO from "../components/SEO"
-// export default () => {
-//   return <Layout>
-//     <div className="index-page">
-//
-//     {/*<Subheader pageTitle={'Im baby flexitarian art party forage, kinfolk prism overeaćh on vinyl artisan taiyaki tbh'}></Subheader>*/}
-//
-//     <MainPageSlider2/>
-//
-//     </div>
-//   </Layout>
-// }
-// ...GatsbyImageSharpFluid
 
 const indexPage = () => {
   const schema = {
