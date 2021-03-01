@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from "framer-motion";
 
-const TriggerText = ({children}) => {
+const TriggerText = ({children, delay, threshold}) => {
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: 0,
+    threshold: threshold,
     triggerOnce: false
   });
   const controls = useAnimation();
@@ -26,7 +26,7 @@ const TriggerText = ({children}) => {
       initial="hidden"
       variants={{
         visible: { opacity: 1, y: 0,
-          transition: { delay: .2, duration: .5}
+          transition: { delay: { delay }, duration: .5}
         },
         hidden: { opacity: 0, y: -20 }
       }}

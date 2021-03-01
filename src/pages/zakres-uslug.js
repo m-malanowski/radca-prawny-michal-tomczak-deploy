@@ -1,17 +1,16 @@
 import React from "react"
-// import Layout from "../components/Layout"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-4.jpg"
+import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-4.webp"
 import Footer from "../components/Footer"
-// import Button from "../components/Button"
 import StickyBox from "react-sticky-box"
-import ButtonRight from "../components/CtaButton"
 import Button from "../components/CtaButton"
 import { motion } from "framer-motion"
-import subsecImg1 from "../assets/imgs/aboutImg1.jpeg"
+import subsecImg1 from "../assets/imgs/home-slider/porady-prawne-gdansk.webp"
 import SEO from "../components/SEO"
 import ServicesSlider from "../components/ServicesSlider"
-const variants =  {
+import TriggerText from "../components/TriggerText"
+
+const variants = {
   initial: {
     opacity: 0,
     y: 20
@@ -22,17 +21,18 @@ const variants =  {
     transition: {
       duration: .5,
       delay: 3.5,
-      when: 'afterChildren',
-    },
+      when: "afterChildren"
+    }
   },
   exit: {
     opacity: 0,
-    transition: {delay: 1, duration: .5},
+    transition: { delay: 1, duration: .5 }
   }
 }
 const TeamPage = () => (
   <>
-    <SEO title="⚖️ &nbsp; O Kancelarii | Kancelaria Adwokacka Szymon Mikulak. Porady Prawne Gdynia. Adwokat Gdynia" description="Zadzwoń ☎ 606 502 202. Adwokat Gdynia - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdynia"/>
+    <SEO title="⚖️ &nbsp; O Kancelarii | Kancelaria Adwokacka Szymon Mikulak. Porady Prawne Gdynia. Adwokat Gdynia"
+         description="Zadzwoń ☎ 606 502 202. Adwokat Gdynia - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdynia" />
 
     <div className="services-page">
       <Subheader pageTitle={"Zakres naszych usług, zapoznaj się z naszymi usługami"} subImg={subHeaderPhoto} />
@@ -62,99 +62,102 @@ const TeamPage = () => (
 
         <div className="services-wrapper">
           <div className="service-container">
-              <div className="single-service">
-                <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
-                  taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
-                  truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
-                  loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
-                  Asymmetrical franzen yr.
-                  <br/><br/>
-                  coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
-                  taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
-                  truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
-                  loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
-                  Asymmetrical franzen yr.
+            <div className="single-service">
+              <motion.p variants={variants} initial="initial" animate="enter">Fixie coloring book beard biodiesel
+                leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
+                taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
+                truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
+                loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
+                Asymmetrical franzen yr.
+                <br /><br />
+                coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
+                taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
+                truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
+                loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
+                Asymmetrical franzen yr.
 
 
-                </p>
-              </div>
-            <ServicesSlider/>
+              </motion.p>
+            </div>
+            <ServicesSlider />
 
-          {/*  <div className="single-service">*/}
-          {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-          {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-          {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-          {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-          {/*      Asymmetrical franzen yr.</p>*/}
-          {/*  </div>*/}
-          {/*  <div className="single-service">*/}
-          {/*    /!*<div className="line"/>*!/*/}
-          {/*    <h2>Prawo pracy</h2>*/}
-          {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-          {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-          {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-          {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-          {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
-          {/*      pok pok retro messenger bag health*/}
-          {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
-          {/*      brooklyn sriracha flexitarian whatever.*/}
-          {/*    </p>*/}
-          {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
+            {/*  <div className="single-service">*/}
+            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
+            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
+            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
+            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
+            {/*      Asymmetrical franzen yr.</p>*/}
+            {/*  </div>*/}
+            {/*  <div className="single-service">*/}
+            {/*    /!*<div className="line"/>*!/*/}
+            {/*    <h2>Prawo pracy</h2>*/}
+            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
+            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
+            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
+            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
+            {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
+            {/*      pok pok retro messenger bag health*/}
+            {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
+            {/*      brooklyn sriracha flexitarian whatever.*/}
+            {/*    </p>*/}
+            {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
 
-          {/*  </div>*/}
+            {/*  </div>*/}
 
-          {/*  <div className="single-service">*/}
-          {/*    /!*<div className="line"/>*!/*/}
-          {/*    <h2>Prawo rodzinne</h2>*/}
-          {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-          {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-          {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-          {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-          {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
-          {/*      pok pok retro messenger bag health*/}
-          {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
-          {/*      brooklyn sriracha flexitarian whatever.*/}
-          {/*    </p>*/}
-          {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
+            {/*  <div className="single-service">*/}
+            {/*    /!*<div className="line"/>*!/*/}
+            {/*    <h2>Prawo rodzinne</h2>*/}
+            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
+            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
+            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
+            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
+            {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
+            {/*      pok pok retro messenger bag health*/}
+            {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
+            {/*      brooklyn sriracha flexitarian whatever.*/}
+            {/*    </p>*/}
+            {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
 
-          {/*  </div>*/}
+            {/*  </div>*/}
 
-          {/*  <div className="single-service">*/}
-          {/*    /!*<div className="line"/>*!/*/}
-          {/*    <h2>Prawo gospodarcze</h2>*/}
-          {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-          {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-          {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-          {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-          {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
-          {/*      pok pok retro messenger bag health*/}
-          {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
-          {/*      brooklyn sriracha flexitarian whatever.*/}
-          {/*    </p>*/}
-          {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
+            {/*  <div className="single-service">*/}
+            {/*    /!*<div className="line"/>*!/*/}
+            {/*    <h2>Prawo gospodarcze</h2>*/}
+            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
+            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
+            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
+            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
+            {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
+            {/*      pok pok retro messenger bag health*/}
+            {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
+            {/*      brooklyn sriracha flexitarian whatever.*/}
+            {/*    </p>*/}
+            {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
 
-          {/*  </div>*/}
-          {/*  <div className="single-service">*/}
-          {/*    /!*<div className="line"/>*!/*/}
-          {/*    <h2>Prawo administracyjne</h2>*/}
-          {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-          {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-          {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-          {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-          {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
-          {/*      pok pok retro messenger bag health*/}
-          {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
-          {/*      brooklyn sriracha flexitarian whatever.*/}
-          {/*    </p>*/}
-          {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
-          {/*  </div>*/}
+            {/*  </div>*/}
+            {/*  <div className="single-service">*/}
+            {/*    /!*<div className="line"/>*!/*/}
+            {/*    <h2>Prawo administracyjne</h2>*/}
+            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
+            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
+            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
+            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
+            {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
+            {/*      pok pok retro messenger bag health*/}
+            {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
+            {/*      brooklyn sriracha flexitarian whatever.*/}
+            {/*    </p>*/}
+            {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
+            {/*  </div>*/}
           </div>
 
           <div className="specialization-container">
             <StickyBox offsetTop={50} offsetBottom={50}>
               <div className="quote">
-                <h2 className="">Ogólne informacje franzen yr, <em> literally beum incidunt </em> iurx natus
-                  perspiciatis soluta.</h2>
+                <motion.h2 variants={variants} initial="initial" animate="enter" className="">Ogólne informacje franzen
+                  yr, <em> literally beum incidunt </em> iurx natus
+                  perspiciatis soluta.
+                </motion.h2>
                 {/*<ul className="services-titles">*/}
                 {/*  <li className="active"><h5>Prawo pracy</h5></li>*/}
                 {/*  <li><h5>Prawo rodzinne</h5></li>*/}
@@ -165,46 +168,61 @@ const TeamPage = () => (
             </StickyBox>
           </div>
         </div>
+      </div>
 
-        <div className="page-description-wrapper">
-          <div className="image-subsection image-subsection__right">
-            <motion.img
-              src={subsecImg1} alt=""
-              // ref={ref}
-              // animate={controls}
-              initial="visible"
-              variants={{
-                visible: {
-                  opacity: 1, y: 0, clipPath: "circle(250% at 100% 100%)",
-                  transition: { delay: .2, duration: 1.8 }
-                },
-                hidden: { opacity: 0, y: 50 }
-              }}
-            />
-            <div className="image-overlay-text">
-              <h2>Lorem ipsum dolor sit amet, <br /> <span>consectetur adipisicing elit.</span> <br /> <span>architecto at libero nostrum.</span>
-              </h2>
-              <Button classname="mt-5" url="/kontakt" buttonDesc="Umów spotkanie"/>
+      <div className="page-description-wrapper">
+        <div className="image-subsection image-subsection__right">
+          <motion.img
+            src={subsecImg1} alt=""
+            // ref={ref}
+            // animate={controls}
+            initial="visible"
+            variants={{
+              visible: {
+                opacity: 1, y: 0, clipPath: "circle(250% at 100% 100%)",
+                transition: { delay: .2, duration: 1.8 }
+              },
+              hidden: { opacity: 0, y: 50 }
+            }}
+          />
+          <div className="image-overlay-text">
+            <h2>Lorem ipsum dolor sit amet, <br /> <span>consectetur adipisicing elit.</span> <br /> <span>architecto at libero nostrum.</span>
+            </h2>
+            <Button classname="mt-5" url="/kontakt" buttonDesc="Umów spotkanie" />
 
-            </div>
           </div>
         </div>
+      </div>
 
+      <div className="container-fluid">
         <div className="page-description-wrapper">
           <div className="page-content-description">
             <div className="description-first-element">
-              <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
-                taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
-                truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
-                loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
-                Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag
-                pok pok retro messenger bag health
-                live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings
-                brooklyn sriracha flexitarian whatever.
-              </p>
+              <TriggerText delay=".2" threshold="0.5">
+                <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
+                  taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
+                  truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
+                  loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
+                  Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of
+                  humblebrag
+                  pok pok retro messenger bag health
+                </p>
+              </TriggerText>
+              <TriggerText delay=".6" threshold="0.7">
+                <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
+                  taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
+                  truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
+                  loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
+                  Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of
+                  humblebrag
+                  pok pok retro messenger bag health
+                </p>
+              </TriggerText>
             </div>
             <div className="description-second-element">
-              <h2 className="quote">Etyka pracy literally <em> beum incidunt iurx natus</em> perspiciatis soluta.</h2>
+              <TriggerText delay=".6" threshold="0.7">
+                <h2 className="quote">Etyka pracy literally <em> beum incidunt iurx natus</em> perspiciatis soluta.</h2>
+              </TriggerText>
             </div>
           </div>
         </div>

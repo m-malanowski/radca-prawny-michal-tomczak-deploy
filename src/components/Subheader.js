@@ -21,7 +21,7 @@ const Subheader = ({pageTitle, subImg}) => {
       // }}
 
       className="subheader">
-      <img src={subImg} alt="radca prawny" />
+      <img src={subImg} alt="radca prawny Gdańsk - porady prawne" />
       <div className="page-title container-fluid">
         <div className="col-lg-5 col-md-8">
           <motion.h1

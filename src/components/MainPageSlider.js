@@ -1,11 +1,13 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css";
-import img1 from "../assets/imgs/home-slider/radca-prawny-gdansk-1.jpg"
-import img2 from "../assets/imgs/home-slider/radca-prawny-gdansk-3.jpg"
-import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5.jpg"
+import img1 from "../assets/imgs/home-slider/radca-prawny-gdansk-1.webp"
+import img2 from "../assets/imgs/home-slider/radca-prawny-gdansk-3.webp"
+import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
 import Button from "../components/CtaButton"
 import { motion, useAnimation } from "framer-motion"
+
+
 const icons = {
   'left': 'M501.333 245.333H36.417L178.21 103.541c4.167-4.167 4.167-10.917 0-15.083-4.167-4.167-10.917-4.167-15.083 0l-160 160c-4.167 4.167-4.167 10.917 0 15.083l160 160a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125 4.167-4.167 4.167-10.917 0-15.083L36.417 266.667h464.917A10.66 10.66 0 00512.001 256a10.662 10.662 0 00-10.668-10.667z',
   'right': 'M508.875 248.458l-160-160c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l141.792 141.792H10.667A10.66 10.66 0 000 256a10.66 10.66 0 0010.667 10.667h464.917L333.792 408.458c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125l160-160c4.166-4.166 4.166-10.916-.001-15.083z',

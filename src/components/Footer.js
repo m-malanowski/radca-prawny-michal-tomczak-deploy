@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../assets/imgs/logo4.png"
+import logo from "../assets/imgs/logoNowe.png"
 import PageLinks from "../constants/links"
 import overlay from "../assets/imgs/logoNoweFlame.png";
 import { Link } from "gatsby"

@@ -22,7 +22,7 @@ const Navbar = ({toggleSideBar, isOpen}) => {
            <img src={logo} alt="logo" />
           </motion.a>
 
-          <button type="button" className="toggle-btn" onClick={toggleSideBar}>
+          <button type="button" className="toggle-btn" onClick={toggleSideBar} aria-label="menu-button">
             <div className={`nav-icon ${isOpen? "transformed" : ""}`}>
               <div/>
             </div>

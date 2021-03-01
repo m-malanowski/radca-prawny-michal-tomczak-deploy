@@ -4,7 +4,7 @@ import overlay from "../assets/overlay.svg"
 // import overlay from "../assets/imgs/monogram.png"
 import { motion } from "framer-motion";
 import SEO from "../components/SEO"
-import contactImg from "../assets/imgs/home-slider/radca-prawny-gdansk-3.jpg";
+import contactImg from "../assets/imgs/home-slider/radca-prawny-gdansk-3.webp";
 
 const icons = {
   'map': 'M672 192l-320-128-352 128v768l352-128 320 128 352-128v-768l-352 128zM384 145.73l256 102.4v630.138l-256-102.398v-630.14zM64 236.828l256-93.090v631.8l-256 93.088v-631.798zM960 787.172l-256 93.092v-631.8l256-93.090v631.798z',

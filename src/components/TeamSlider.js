@@ -1,11 +1,6 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import img2 from "../assets/imgs/team/7.jpg"
-import img4 from "../assets/imgs/team/11.jpg"
-import img3 from "../assets/imgs/team/9.jpg"
-import img1 from "../assets/imgs/team/10.jpg"
-import Button from "./CtaButton"
 import TeamButton from "./TeamButton"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
@@ -154,7 +149,6 @@ const TeamSlider = ( props ) => {
             </Link>
           </div>
         </div>
-
       ))}
 
         {/*<div className="member-wrapper keen-slider__slide">*/}

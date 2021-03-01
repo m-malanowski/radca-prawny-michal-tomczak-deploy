@@ -52,19 +52,18 @@ const NavLink = props => (
 
 const tempLinks = data.map(link => {
   return (
-    // <motion.li
-      // initial={{
-      //   opacity: 0,
-      // }}
-      // animate={{
-      //   y: -20,
-      //   opacity: 1,
-      // }}
-      // transition={{delay: 2, duration: 1., ease: [0.6, 0.01, -0.05, 0.9]}}
-      // key={link.id}>
-    <li>
+    <motion.li
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        y: -20,
+        opacity: 1,
+      }}
+      transition={{delay: 2, duration: 1., ease: [0.6, 0.01, -0.05, 0.9]}}
+    >
       <NavLink to={link.url}>{link.text}</NavLink>
-    </li>
+    </motion.li>
   )
 })
 

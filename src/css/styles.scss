@@ -84,6 +84,7 @@
   --clr-primary-8: hsl(213, 93%, 30%);
   --clr-primary-9: hsl(213, 93%, 35%);
   --clr-primary-10: hsl(213, 93%, 40%);
+  --clr-primary-16: hsla(213, 93%, 40%, .2);
   --clr-primary-15: hsla(213, 93%, 40%, .4);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(0, 0%, 15%);
@@ -120,13 +121,13 @@
 }
 
 ::-moz-selection {
-  background: var(--clr-primary-5);
-  color: var(--clr-white)
+  background: var(--clr-white);
+  color: var(--clr-primary-4)
 }
 
 ::selection {
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
+  background: var(--clr-white);
+  color: var(--clr-primary-4);
 }
 
 body {
@@ -281,7 +282,7 @@ Navbar
   img {
     //width: 50%;
     //height: auto;
-    width: 80px;
+    width: 120px;
     //margin-top: -80px;
   }
 }
@@ -485,7 +486,7 @@ footer {
   padding-bottom: 1.075rem;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   @include for-tablet-landscape-up{
     flex-direction: column !important;
     align-items: center;
@@ -603,7 +604,7 @@ Page Title
     padding-bottom: 1rem;
   }
   .page-title {
-    align-self: end;
+    align-self: flex-end;
     //padding-left: 1em;
     //text-indent: -1em;
   }
@@ -649,7 +650,8 @@ Page Index
 ===============
 */
 .index-page {
-  background-image: radial-gradient(#012754, #011f43);
+  //background-image: radial-gradient(#012754, #011f43);
+  background-color: var(--clr-primary-4);
   min-height: calc(100vh - 5rem - 9rem);
   height: 100vh;
 }
@@ -816,17 +818,19 @@ Page About
   @include for-tablet-landscape-up {
     flex-direction: column;
   }
+
   img {
     position: relative;
+    //position: static !important;
     display: block;
     width: 65%;
-    height: 35vw;
+    height: 38vw;
     -o-object-position: center;
     object-position: center;
     -o-object-fit: cover;
     object-fit: cover;
     will-change: clip-path;
-    clip-path: circle(29.4% at 84% 84%);
+    //clip-path: circle(29.4% at 84% 84%);
     @include for-tablet-landscape-up {
       width: 100%;
       height: 50vw;
@@ -858,7 +862,7 @@ Page About
   -ms-flex-pack: end;
   justify-content: flex-end;
   .image-overlay-text {
-    left: 15%;
+    left: 20%;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -874,7 +878,7 @@ Page About
 
 .image-overlay-text {
   position: absolute;
-  right: 15%;
+  right: 20%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -929,7 +933,7 @@ ImG Wrapper BlueTint
   }
   picture{
     img{
-      filter: opacity(80%) brightness(120%);
+      filter: opacity(90%) brightness(120%) saturate(0%);
     }
   }
   .img-wrapper::before {
@@ -962,6 +966,7 @@ ImG Wrapper BlueTint
     z-index: 1;
     mix-blend-mode: screen;
   }
+
 }
 .article-wrapper{
   .img-wrapper::before {
@@ -976,6 +981,11 @@ ImG Wrapper BlueTint
     background-color: var(--clr-primary-5);
     z-index: 1;
     mix-blend-mode: screen;
+  }
+  picture{
+    img{
+      filter: opacity(100%) brightness(120%) saturate(0%);
+    }
   }
   //.img-wrapper:nth-child(odd)::before{
   //  //opacity: 0;
@@ -1356,7 +1366,8 @@ Page Contact
 
   svg {
     margin-right: 1rem;
-    fill: rgba(67, 151, 248, .65);
+    //fill: rgba(67, 151, 248, .65);
+    fill: var(--clr-primary-10);
     transform: translateY(.1rem);
   }
   h2 {
@@ -2253,7 +2264,7 @@ Button2
     fill: transparent;
     stroke-dasharray: 377;
     stroke-dashoffset: 377;
-    stroke: var(--clr-primary-10);
+    stroke: var(--clr-primary-16);
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
     transition: all 800ms ease-in-out;
@@ -2357,7 +2368,7 @@ Team Button
     //fill: #012754;
     stroke-dasharray: 377;
     stroke-dashoffset: 377;
-    stroke: var(--clr-primary-10);
+    stroke: var(--clr-primary-16);
     transform-origin: 50% 50%;
     transform: rotate(-90deg);
     transition: all 800ms ease-in-out;
@@ -2732,4 +2743,12 @@ Nav  Icon
   & div {
     transform: scale(0);
   }
+}
+
+img{
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
