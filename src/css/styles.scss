@@ -156,6 +156,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  font-family: var(--ff-secondary);
 }
 
 span,
@@ -1759,8 +1760,30 @@ Team Slider Home And Team
 //  transform: translateY(200%);
 //}
 //
+.arrow-services{
 
-.arrow-team {
+}
+.arrows-wrapper-services{
+  position: relative;
+  bottom: -20rem;
+}
+.arrow-services.arrow-services--left{
+  left: 0% !important;
+  //bottom: 10rem;
+  @include for-tablet-landscape-up{
+    left: 0;
+  }
+}
+.arrow-services.arrow-services--right{
+  left: 10%;
+  //bottom: 10rem;
+  @include for-tablet-landscape-up{
+    left: 0;
+  }
+}
+
+
+.arrow-team, .arrow-services {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -2065,6 +2088,12 @@ Team Slider Home And Team
   //transform: translateY(-50%) translateX(-50%);
   //-webkit-transform: translateY(-50%) translateX(-50%);
 
+  box-shadow: 30px 30px 60px var(--clr-primary-1);
+  -moz-box-shadow: 30px 30px 60px var(--clr-primary-1);
+  -webkit-box-shadow: 30px 30px 60px var(--clr-primary-1);
+  -khtml-box-shadow: 30px 30px 60px var(--clr-primary-1);
+
+
   position: fixed;
   display: block;
   top: 0;
@@ -2076,7 +2105,6 @@ Team Slider Home And Team
   -o-object-position: center top;
   object-position: center top;
 }
-
 
 
 .fader {
@@ -2436,7 +2464,6 @@ Button
   //font-size: 14px;
   line-height: 1em;
   //font-weight: 900;
-
   //letter-spacing: 0.25em;
   text-transform: lowercase;
   vertical-align: middle;

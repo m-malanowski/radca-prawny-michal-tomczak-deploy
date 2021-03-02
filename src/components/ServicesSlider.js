@@ -1,12 +1,7 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import Button from "./CtaButton"
-import ButtonRight from "../components/CtaButton"
 import TeamButton from "./TeamButton"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import Image from "gatsby-image"
-// import TeamMember from "./TeamMember"
 const services = [
   {
     title: "Prawo rodzinne",
@@ -41,7 +36,7 @@ const services = [
 const ArrowLeft = (props) => {
   return (
     <div
-      className={"arrow-team arrow--left"}
+      className={"arrow-services arrow-services--left"}
       onClick={props.onClick}
     >
       <TeamButton
@@ -54,7 +49,7 @@ const  ArrowRight = (props) => {
   return (
 
     <div
-      className={"arrow-team arrow--right"}
+      className={"arrow-services arrow-services--right"}
       onClick={props.onClick}
     >
       <TeamButton
@@ -72,7 +67,7 @@ const TeamSlider = (  ) => {
   const timer = React.useRef()
 
   const [sliderRef, slider] = useKeenSlider({
-    loop: false,
+    loop: true,
     duration: 1500,
     initial: 0,
     slidesPerView: 1,
@@ -106,7 +101,7 @@ const TeamSlider = (  ) => {
   return (
     <>
       {slider && (
-        <div className="arrows-wrapper">
+        <div className="arrows-wrapper-services">
           <ArrowLeft
             onClick={(e) => e.stopPropagation() || slider.prev()}
             disabled={currentSlide === 0}

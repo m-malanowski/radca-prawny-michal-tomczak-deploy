@@ -16,9 +16,9 @@ const indexPage = () => {
     "telephone": "+ 48 507 455 057",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Księdza Robaka 1",
+      "streetAddress": "Strzelecka 10/1",
       "addressLocality": "Gdańsk",
-      "postalCode": "80-119",
+      "postalCode": "80-803",
       "addressCountry": "PL"
     },
     "geo": {
@@ -44,8 +44,8 @@ const indexPage = () => {
   }
   return (
     <>
-      <SEO title="⚖️ &nbsp; O Kancelarii | Radca Prawny Gdańsk Michał Tomczak. Porady Prawne Gdynia. Adwokat Gdynia"
-           description="Zadzwoń ☎ + 48 507 455 057. Radca Prawny Gdańsk Michał Tomczak - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdynia"
+      <SEO title="⚖️ &nbsp; Radca Prawny Gdańsk Michał Tomczak. Porady Prawne Gdańsk "
+           description="Zadzwoń ☎ + 48 507 455 057. Radca Prawny Gdańsk Michał Tomczak - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk"
            schemaMarkup={schema}
       />
 

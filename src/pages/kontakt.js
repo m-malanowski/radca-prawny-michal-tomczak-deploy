@@ -57,8 +57,8 @@ const kontakt = () => (
             <a className="link-hover" href="tel: + 48 507 455 057">+ 48 507 455 057</a>
           </motion.p>
           <ul >
-            <motion.li variants={variants} initial="initial" animate="enter" exit="exit">Księdza Robaka 1</motion.li>
-            <motion.li variants={variants} initial="initial" animate="enter" exit="exit">80-119, Gdańsk</motion.li>
+            <motion.li variants={variants} initial="initial" animate="enter" exit="exit">ul. Strzelecka 10/1</motion.li>
+            <motion.li variants={variants} initial="initial" animate="enter" exit="exit">80-803 Gdańsk</motion.li>
             <motion.li variants={variants} initial="initial" animate="enter" exit="exit">Pomorskie</motion.li>
           </ul>
           <br/>

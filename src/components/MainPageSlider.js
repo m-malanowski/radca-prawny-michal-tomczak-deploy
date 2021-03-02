@@ -7,7 +7,6 @@ import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
 import Button from "../components/CtaButton"
 import { motion, useAnimation } from "framer-motion"
 
-
 const icons = {
   'left': 'M501.333 245.333H36.417L178.21 103.541c4.167-4.167 4.167-10.917 0-15.083-4.167-4.167-10.917-4.167-15.083 0l-160 160c-4.167 4.167-4.167 10.917 0 15.083l160 160a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125 4.167-4.167 4.167-10.917 0-15.083L36.417 266.667h464.917A10.66 10.66 0 00512.001 256a10.662 10.662 0 00-10.668-10.667z',
   'right': 'M508.875 248.458l-160-160c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l141.792 141.792H10.667A10.66 10.66 0 000 256a10.66 10.66 0 0010.667 10.667h464.917L333.792 408.458c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125l160-160c4.166-4.166 4.166-10.916-.001-15.083z',
@@ -85,14 +84,19 @@ const MainPageSlider = (props) => {
     duration: 1500,
     slides: images.length,
     initial: 0,
+    dragSpeed: .3,
+    // resetSlide: true,
+    vertical: true,
+
     slideChanged(instance) {
       setCurrentSlide(instance.details().relativeSlide)
       console.log("slideChanged");
+      controls.start("hidden")
     },
     move(instance) {
       setDetails(instance.details())
-      controls.start("hidden")
       console.log("move");
+      setPause(true)
     },
     // beforeChange: (instance) => {
     //   console.log("beforeChange");
@@ -105,14 +109,13 @@ const MainPageSlider = (props) => {
       console.log("afterChange");
       controls.start("visible")
       // controls2.start("visible")
+      setPause(false)
     },
     // slideChanged: (instance) =>{
     //   console.log("slideChanged")
     //   controls.start("visible")
     //   controls.start("hidden")
-    //
     // },
-
   })
 
   React.useEffect(() => {
@@ -131,12 +134,15 @@ const MainPageSlider = (props) => {
     if (!details) return {}
     const position = details.positions[idx]
     const x = details.widthOrHeight * position.distance
-    const scale_size = 0.7
-    const scale = 1 - (scale_size - scale_size * position.portion)
+    const scaleSize = 0.8
+    const scale = 1 - (scaleSize - scaleSize * position.portion)
+    const skewSize = 15
+    const skew = 0 - (skewSize - skewSize * position.portion)
+
     return {
-      transform: `translate3d(${x}px, 0px, 0px) scale(${scale})`,
+      transform: `translate3d(0px, ${x}px, 0px) scale(${scale}) skew(0deg, ${skew}deg)`,
       transition: `transform 1.6s cubic-bezier(0.16, 1, 0.3, 1)`,
-      WebkitTransform: `translate3d(${x}px, 0px, 0px) scale(${scale})`,
+      WebkitTransform: `translate3d(0px, ${x}px, 0px) scale(${scale}) skew($0deg, ${skew}deg)`,
     }
   }
   return (
@@ -205,7 +211,7 @@ const MainPageSlider = (props) => {
         ))}
       </div>
       {slider && (
-        <>
+        <div>
           <ArrowLeft
             onClick={(e) => e.stopPropagation() || slider.prev()}
             disabled={currentSlide === 0}
@@ -214,7 +220,7 @@ const MainPageSlider = (props) => {
             onClick={(e) => e.stopPropagation() || slider.next()}
             disabled={currentSlide === slider.details().size - 1}
           />
-        </>
+        </div>
       )}
       {slider && (
         <motion.div
@@ -233,7 +239,7 @@ const MainPageSlider = (props) => {
                   }}
                 >
                   <a
-                    aria-label="Adwokat Gdynia"
+                    aria-label="Radca prawny Gdańsk - porady prawne"
                     className="lines-item"
                     href="#">
                     <div className="lines-dash"/>
