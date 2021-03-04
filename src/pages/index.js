@@ -1,7 +1,6 @@
 import React from "react"
 import MainPageSlider2 from "../components/MainPageSlider"
 import { motion } from "framer-motion"
-import logo from "../assets/imgs/logoNowe.png"
 import SEO from "../components/SEO"
 import { pathVariants, pathVariantsOuter } from "../components/variants"
 
@@ -11,7 +10,7 @@ const indexPage = () => {
     "@type": "LocalBusiness",
     "name": "Kancelaria Radcy Prawnego Michał Tomczak",
     "hasMap": "https://www.google.com/maps/d/u/0/edit?mid=1q5MkFFkEu_U21aiml_JCm_ny1CzfDLhD&usp=sharing",
-    "image": "https://radcaprawnytomczak.pl/facebook.jpg",
+    "image": "https://radcaprawnytomczak.pl/static/facebook.jpg",
     "@id": "",
     "url": "https://radcaprawnytomczak.pl",
     "telephone": "+ 48 507 455 057",
@@ -24,8 +23,8 @@ const indexPage = () => {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 54.34203143971135,
-      "longitude": 18.60400830766561
+      "latitude": 54.351786175515336,
+      "longitude": 18.638663907034715
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
