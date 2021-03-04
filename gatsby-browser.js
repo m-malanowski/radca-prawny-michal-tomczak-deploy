@@ -17,7 +17,7 @@ export const wrapPageElement = ({ element, props }) => {
 // export const onRouteUpdate = () => {
 //   window.__navigatingToLink = false;
 // };
-const transitionDelay = 2500
+const transitionDelay = 1500
 export const shouldUpdateScroll = ({ routerProps: { location }, getSavedScrollPosition }) => {
   if (location.action === "PUSH") {
     window.setTimeout(() => window.scrollTo(0, 0), transitionDelay)

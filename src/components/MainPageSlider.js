@@ -6,11 +6,13 @@ import img2 from "../assets/imgs/home-slider/radca-prawny-gdansk-3.webp"
 import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
 import Button from "../components/CtaButton"
 import { motion, useAnimation } from "framer-motion"
+import { SplitText } from "./SplitText"
+import { splitTextVariants } from "./variants"
 
-const icons = {
-  'left': 'M501.333 245.333H36.417L178.21 103.541c4.167-4.167 4.167-10.917 0-15.083-4.167-4.167-10.917-4.167-15.083 0l-160 160c-4.167 4.167-4.167 10.917 0 15.083l160 160a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125 4.167-4.167 4.167-10.917 0-15.083L36.417 266.667h464.917A10.66 10.66 0 00512.001 256a10.662 10.662 0 00-10.668-10.667z',
-  'right': 'M508.875 248.458l-160-160c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l141.792 141.792H10.667A10.66 10.66 0 000 256a10.66 10.66 0 0010.667 10.667h464.917L333.792 408.458c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125l160-160c4.166-4.166 4.166-10.916-.001-15.083z',
-};
+// const icons = {
+//   'left': 'M501.333 245.333H36.417L178.21 103.541c4.167-4.167 4.167-10.917 0-15.083-4.167-4.167-10.917-4.167-15.083 0l-160 160c-4.167 4.167-4.167 10.917 0 15.083l160 160a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125 4.167-4.167 4.167-10.917 0-15.083L36.417 266.667h464.917A10.66 10.66 0 00512.001 256a10.662 10.662 0 00-10.668-10.667z',
+//   'right': 'M508.875 248.458l-160-160c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l141.792 141.792H10.667A10.66 10.66 0 000 256a10.66 10.66 0 0010.667 10.667h464.917L333.792 408.458c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125l160-160c4.166-4.166 4.166-10.916-.001-15.083z',
+// };
 const images = [
   {
     img: img1,
@@ -90,32 +92,21 @@ const MainPageSlider = (props) => {
 
     slideChanged(instance) {
       setCurrentSlide(instance.details().relativeSlide)
-      console.log("slideChanged");
+      // console.log("slideChanged");
       controls.start("hidden")
     },
     move(instance) {
       setDetails(instance.details())
-      console.log("move");
+      // console.log("move");
       setPause(true)
     },
-    // beforeChange: (instance) => {
-    //   console.log("beforeChange");
-    //   controls.start("hidden")
-    //   // controls2.start("hidden")
-    //   console.log("dragStart");
-    // },
     afterChange: (instance) => {
-      console.log("dragEnd");
-      console.log("afterChange");
+      // console.log("dragEnd");
+      // console.log("afterChange");
       controls.start("visible")
       // controls2.start("visible")
       setPause(false)
     },
-    // slideChanged: (instance) =>{
-    //   console.log("slideChanged")
-    //   controls.start("visible")
-    //   controls.start("hidden")
-    // },
   })
 
   React.useEffect(() => {
@@ -154,59 +145,61 @@ const MainPageSlider = (props) => {
             style={positionStyle(idx)}
             className="zoom-out__slide"
           >
-            <img src={item.img} alt={item.title} />
+            <img
+              // exit={{  opacity: 0 }}
+              // initial={{ opacity: 0, }}
+              // animate={{ opacity: 1, transition: {delay: 1.2,  duration: 1., ease: [0.6, 0.01, -0.05, 0.9] } }}
+              src={item.img} alt={item.title} />
 
-            <motion.div
-              exit={{ y: 20, opacity: 0 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0, transition: {delay: 2,  duration: 1., ease: [0.6, 0.01, -0.05, 0.9] } }}
+            <div
+              // exit={{ y: 10, opacity: 0 }}
+              // initial={{ opacity: 0, y: 20 }}
+              // animate={{ opacity: 1, y: 0, transition: {delay: 2,  duration: 1., ease: [0.6, 0.01, -0.05, 0.9] } }}
               className="index-slider">
               <div className="container-fluid ">
                 <div className="col-lg-5 col-12">
-                  {/*<motion.p*/}
+
+                  {/*<motion.h1*/}
                   {/*  animate={controls}*/}
                   {/*  // exit={{ y: 20, opacity: 0 }}*/}
                   {/*  variants={{*/}
                   {/*    visible: {*/}
                   {/*      opacity: 1, y: 0,*/}
-                  {/*      transition: { delay: .2, duration: .6,  }*/}
+                  {/*      transition: { delay: .4, duration: .6,  }*/}
                   {/*    },*/}
-                  {/*    hidden: { opacity: 0, y: -60, }*/}
+                  {/*    hidden: { opacity: 0, y: -40, }*/}
                   {/*  }}*/}
-                  {/*  className="beforeH1">*/}
-                  {/*  {item.beforeTitle}*/}
-                  {/*</motion.p>*/}
+                  {/*>*/}
+                  {/*  {item.title}*/}
+                  {/*</motion.h1>*/}
 
-                  <motion.h1
-                    animate={controls}
-                    // exit={{ y: 20, opacity: 0 }}
-                    variants={{
-                      visible: {
-                        opacity: 1, y: 0,
-                        transition: { delay: .4, duration: .6,  }
-                      },
-                      hidden: { opacity: 0, y: -40, }
-                    }}
-                  >
-                    {item.title}
-                  </motion.h1>
+                  <h1>
+                    <SplitText
+                      initial={{ y: "100%" }}
+                      animate={controls}
+                      exit="hidden"
+                      variants={splitTextVariants}
+                    >
+                      {item.title}
+                    </SplitText>
+                  </h1>
 
                   <motion.div
                     animate={controls}
-                    // exit={{ y: 20, opacity: 0 }}
+                    exit={{ y: 20, opacity: 0 }}
                     variants={{
                       visible: {
                         opacity: 1, y: 0,
                         transition: { delay: .6, duration: .6,  }
                       },
-                      hidden: { opacity: 0, y: -20, }
+                      hidden: { opacity: 0, y: 20, }
                     }}
                   >
                     <Button url={item.url} color={"white"} buttonDesc={item.buttonText}/>
                   </motion.div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         ))}
       </div>
@@ -223,10 +216,10 @@ const MainPageSlider = (props) => {
         </div>
       )}
       {slider && (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          exit={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0, transition: {delay: 2.2,  duration: 1., ease: [0.6, 0.01, -0.05, 0.9] } }}
+        <div
+          // initial={{ opacity: 0, y: 20 }}
+          // exit={{ opacity: 0, y: 20 }}
+          // animate={{ opacity: 1, y: 0, transition: {delay: 2.2,  duration: 1., ease: [0.6, 0.01, -0.05, 0.9] } }}
           className="linesWrapper">
           <ul className="lines">
             {[...Array(slider.details().size).keys()].map((idx) => {
@@ -248,7 +241,7 @@ const MainPageSlider = (props) => {
               )
             })}
           </ul>
-        </motion.div>
+        </div>
       )}
     </>
   )

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import {motion, AnimatePresence} from "framer-motion";
+// import {motion, AnimatePresence} from "framer-motion";
 
 const data = [
   // {
@@ -42,6 +42,8 @@ const NavLink = props => (
       return {
         style: {
           color: isCurrent ? "#ffffff" : "hsla(0,0%,100%, .6)",
+
+
           // color: (condition) ? (true block) : ((condition2) ? (true block2) : (else block2)),
           // borderBottom: isCurrent ? "1px solid white" : "none"
         }
@@ -52,18 +54,19 @@ const NavLink = props => (
 
 const tempLinks = data.map(link => {
   return (
-    <motion.li
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        y: -20,
-        opacity: 1,
-      }}
-      transition={{delay: 2, duration: 1., ease: [0.6, 0.01, -0.05, 0.9]}}
+    <li
+      key={link.id}
+      // initial={{
+      //   opacity: 0,
+      // }}
+      // animate={{
+      //   y: -20,
+      //   opacity: 1,
+      // }}
+      // transition={{delay: 1.3, duration: 1., ease: [0.6, 0.01, -0.05, 0.9]}}
     >
-      <NavLink to={link.url}>{link.text}</NavLink>
-    </motion.li>
+      <NavLink aria-current="location" to={link.url}>{link.text}</NavLink>
+    </li>
   )
 })
 

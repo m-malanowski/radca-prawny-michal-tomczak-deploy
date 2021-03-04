@@ -14,9 +14,6 @@ const TriggerText = ({children, delay, threshold}) => {
     if (inView) {
       controls.start("visible");
     }
-    // else{
-    //   controls.start("hidden");
-    // }
   }, [controls, inView]);
 
   return (
@@ -26,17 +23,11 @@ const TriggerText = ({children, delay, threshold}) => {
       initial="hidden"
       variants={{
         visible: { opacity: 1, y: 0,
-          transition: { delay: { delay }, duration: .5}
+          transition: { delay:  delay , duration: .5}
         },
-        hidden: { opacity: 0, y: -20 }
+        hidden: { opacity: 0, y: 20 }
       }}
-      // variants={{
-      //   visible: {
-      //     opacity: 1, y: 0,
-      //     transition: { delay: .4, duration: .6,  }
-      //   },
-      //   hidden: { opacity: 0, y: -40, }
-      // }}
+
     >
       {children}
     </motion.div>

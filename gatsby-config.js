@@ -7,11 +7,14 @@
 module.exports = {
   siteMetadata: {
     title: "⚖️ Kancelaria Radcy Prawnego Michał Tomczak, Radca Prawny Gdańsk",
-    description: "Zadzwoń ☎ 606 502 202. Adwokat Gdynia - sprawy cywilne, sprawy karne, sprawy rodzinne, rozwód, dobra osobiste, porady prawne, kontakty z dziećmi, alimenty, odszkodowanie, obrońca",
+    description: "Zadzwoń ☎ 507 455 057. Radca Prawny Gdynia - sprawy cywilne, sprawy karne, sprawy rodzinne, rozwód, dobra osobiste, porady prawne, kontakty z dziećmi, alimenty, odszkodowanie, obrońca",
     author: "LUMINA.STUDIO",
     twitterUsername: "@mat",
     // image: "/twitter-img.png",
     siteUrl: "https://radcaprawnytomczak.pl",
+  },
+  flags: {
+    DEV_SSR: false,
   },
   plugins: [
     `gatsby-plugin-sass`,

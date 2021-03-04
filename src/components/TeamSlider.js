@@ -91,7 +91,7 @@ const TeamSlider = ( props ) => {
   const [sliderRef, slider] = useKeenSlider({
     initial: 0,
     slidesPerView: 3,
-    mode: "free-snap",
+    // mode: "free-snap",
     centered: false,
     spacing: 15,
     loop: true,
@@ -107,16 +107,16 @@ const TeamSlider = ( props ) => {
     // },
   })
 
-  React.useEffect(() => {
-    timer.current = setInterval(() => {
-      if (!pause && slider) {
-        slider.next()
-      }
-    }, 6000)
-    return () => {
-      clearInterval(timer.current)
-    }
-  }, [pause, slider])
+  // React.useEffect(() => {
+  //   timer.current = setInterval(() => {
+  //     if (!pause && slider) {
+  //       slider.next()
+  //     }
+  //   }, 12000)
+  //   return () => {
+  //     clearInterval(timer.current)
+  //   }
+  // }, [pause, slider])
 
 
   return (
@@ -143,7 +143,7 @@ const TeamSlider = ( props ) => {
             <Image className="img" fluid={member.image.childImageSharp.fluid}/>
           </div>
           <div>
-            <Link to={"/zespol/" + member.slug}>
+            <Link to={ member.slug}>
               <h4>{member.name}</h4>
               <p>{ member.position }</p>
             </Link>

@@ -1,8 +1,6 @@
 import React from "react"
-// import Layout from "../components/Layout"
 import Subheader from "../components/Subheader"
 import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
-// import subsecImg1 from "../assets/imgs/aboutImg1.jpeg";
 import Footer from "../components/Footer"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"

@@ -1,34 +1,18 @@
 import React from "react"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-4.webp"
+import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-3.webp"
 import Footer from "../components/Footer"
 import StickyBox from "react-sticky-box"
 import Button from "../components/CtaButton"
-import { motion } from "framer-motion"
-import subsecImg1 from "../assets/imgs/home-slider/porady-prawne-gdansk.webp"
+// import { motion } from "framer-motion"
+// import subsecImg1 from "../assets/imgs/home-slider/porady-prawne-gdansk.webp"
 import SEO from "../components/SEO"
 import ServicesSlider from "../components/ServicesSlider"
 import TriggerText from "../components/TriggerText"
+import { TriggerSplit } from "../components/TriggerSplit"
+import TriggerImg from "../components/TriggerImg"
+import aboutImg2 from "../assets/imgs/home-slider/porady-prawne-gdansk-3.webp"
 
-const variants = {
-  initial: {
-    opacity: 0,
-    y: 20
-  },
-  enter: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: .5,
-      delay: 3.5,
-      when: "afterChildren"
-    }
-  },
-  exit: {
-    opacity: 0,
-    transition: { delay: 1, duration: .5 }
-  }
-}
 const TeamPage = () => (
   <>
     <SEO title="⚖️ &nbsp; O Kancelarii | Kancelaria Adwokacka Szymon Mikulak. Porady Prawne Gdynia. Adwokat Gdynia"
@@ -36,7 +20,6 @@ const TeamPage = () => (
 
     <div className="services-page">
       <Subheader pageTitle={"Zakres naszych usług, zapoznaj się z naszymi usługami"} subImg={subHeaderPhoto} />
-
       <div className="page-content container-fluid">
 
         {/*<div className="page-description-wrapper">*/}
@@ -63,23 +46,24 @@ const TeamPage = () => (
         <div className="services-wrapper">
           <div className="service-container">
             <div className="single-service">
-              <motion.p variants={variants} initial="initial" animate="enter">Fixie coloring book beard biodiesel
-                leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
-                taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
-                truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
-                loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
-                Asymmetrical franzen yr.
-                <br /><br />
-                coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
-                taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
-                truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
-                loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
-                Asymmetrical franzen yr.
-
-
-              </motion.p>
+              <p>
+                <TriggerSplit threshold=".5">
+                  leggings four loko, neutra bespoke lyft hashtag.
+                  Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
+                  viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
+                  raw denim.
+                  Four loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
+                  goth. Pop-up normcore health goth, trust fund iceland tumblr cloud bread cornhole VHS meggings direct
+                  trade kale chips vexillologist schlitz.
+                  Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
+                  Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
+                  cold-pressed williamsburg selfies live-edge butcher tacos
+                </TriggerSplit>
+              </p>
             </div>
-            <ServicesSlider />
+            <TriggerText delay=".2" threshold="0.5">
+              <ServicesSlider />
+            </TriggerText>
 
             {/*  <div className="single-service">*/}
             {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
@@ -154,16 +138,11 @@ const TeamPage = () => (
           <div className="specialization-container">
             <StickyBox offsetTop={50} offsetBottom={50}>
               <div className="quote">
-                <motion.h2 variants={variants} initial="initial" animate="enter" className="">Ogólne informacje franzen
-                  yr, <em> literally beum incidunt </em> iurx natus
-                  perspiciatis soluta.
-                </motion.h2>
-                {/*<ul className="services-titles">*/}
-                {/*  <li className="active"><h5>Prawo pracy</h5></li>*/}
-                {/*  <li><h5>Prawo rodzinne</h5></li>*/}
-                {/*  <li><h5>Prawo gospodarcze</h5></li>*/}
-                {/*  <li><h5>Prawo adniminstracyjne</h5></li>*/}
-                {/*</ul>*/}
+                <h2>
+                  <TriggerSplit threshold="1">
+                    franzen yr, literally beum incidunt iurx natus perspiciatis soluta.
+                  </TriggerSplit>
+                </h2>
               </div>
             </StickyBox>
           </div>
@@ -172,22 +151,16 @@ const TeamPage = () => (
 
       <div className="page-description-wrapper">
         <div className="image-subsection image-subsection__right">
-          <motion.img
-            src={subsecImg1} alt=""
-            // ref={ref}
-            // animate={controls}
-            initial="visible"
-            variants={{
-              visible: {
-                opacity: 1, y: 0, clipPath: "circle(250% at 100% 100%)",
-                transition: { delay: .2, duration: 1.8 }
-              },
-              hidden: { opacity: 0, y: 50 }
-            }}
-          />
+          <TriggerImg>
+            <img src={aboutImg2} alt="Radca prawny Gdańsk" />
+          </TriggerImg>
+
           <div className="image-overlay-text">
-            <h2>Lorem ipsum dolor sit amet, <br /> <span>consectetur adipisicing elit.</span> <br /> <span>architecto at libero nostrum.</span>
-            </h2>
+            <h3>
+              <TriggerSplit threshold="1">
+                franzen yr, literally beum incidunt iurx natus perspiciatis soluta.
+              </TriggerSplit>
+            </h3>
             <Button classname="mt-5" url="/kontakt" buttonDesc="Umów spotkanie" />
 
           </div>
@@ -198,31 +171,42 @@ const TeamPage = () => (
         <div className="page-description-wrapper">
           <div className="page-content-description">
             <div className="description-first-element">
-              <TriggerText delay=".2" threshold="0.5">
-                <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
-                  taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
-                  truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
-                  loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
-                  Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of
-                  humblebrag
-                  pok pok retro messenger bag health
-                </p>
-              </TriggerText>
-              <TriggerText delay=".6" threshold="0.7">
-                <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde
-                  taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage
-                  truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four
-                  loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
-                  Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of
-                  humblebrag
-                  pok pok retro messenger bag health
-                </p>
-              </TriggerText>
+              <p>
+                <TriggerSplit threshold=".5">
+                  leggings four loko, neutra bespoke lyft hashtag.
+                  Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
+                  viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
+                  raw denim.
+                  Four loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
+                  goth. Pop-up normcore health goth, trust fund iceland tumblr cloud bread cornhole VHS meggings direct
+                  trade kale chips vexillologist schlitz.
+                  Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
+                  Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
+                  cold-pressed williamsburg selfies live-edge butcher tacos
+                </TriggerSplit>
+              </p>
+              <br/><br/>
+              <p>
+                <TriggerSplit threshold=".5">
+                  leggings four loko, neutra bespoke lyft hashtag.
+                  Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
+                  viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
+                  raw denim.
+                  Four loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.
+                  goth. Pop-up normcore health goth, trust fund iceland tumblr cloud bread cornhole VHS meggings direct
+                  trade kale chips vexillologist schlitz.
+                  Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
+                  Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
+                  cold-pressed williamsburg selfies live-edge butcher tacos
+                </TriggerSplit>
+              </p>
             </div>
             <div className="description-second-element">
-              <TriggerText delay=".6" threshold="0.7">
-                <h2 className="quote">Etyka pracy literally <em> beum incidunt iurx natus</em> perspiciatis soluta.</h2>
-              </TriggerText>
+              <h2 className="quote">
+                <TriggerSplit threshold="1">
+                  franzen yr, literally beum incidunt iurx natus perspiciatis soluta.
+                </TriggerSplit>
+              </h2>
             </div>
           </div>
         </div>

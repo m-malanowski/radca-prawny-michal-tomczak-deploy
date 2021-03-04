@@ -1,12 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
-import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
 import { Helmet } from "react-helmet"
-import img1 from "../assets/imgs/sub2.jpg"
 import CtaButton from "../components/CtaButton"
 import SEO from "../components/SEO"
+import TriggerText from "../components/TriggerText"
 
 const ComponentName = ({ data }) => {
   return <>
@@ -19,26 +18,35 @@ const ComponentName = ({ data }) => {
 
       <div className="page-content container-fluid">
         <div className="article-image img-wrapper">
-            {/*<img className="img" src={img1} alt="" />*/}
-          <Image className="img" fluid={data.blog.image.childImageSharp.fluid}/>
+          <TriggerText delay=".1" threshold="0.4">
+            <Image className="img" fluid={data.blog.image.childImageSharp.fluid}/>
+          </TriggerText>
         </div>
 
         <div className="article">
           <div className="article-header">
             <div>
-              <h1>{ data.blog.title }</h1>
-              <em className="em-bt">{ data.blog.date }</em>
+              <TriggerText threshold=".5">
+                <h1>{ data.blog.title }</h1>
+              </TriggerText>
+              <TriggerText threshold="1" delay=".2">
+                <em className="em-bt">{ data.blog.date }</em>
+              </TriggerText>
+
             </div>
           </div>
           <br/>
 
           <article className="mt-5">
-            <ReactMarkdown source={ data.blog.content }/>
+            <TriggerText threshold="1" delay=".4">
+             <ReactMarkdown source={ data.blog.content }/>
+            </TriggerText>
           </article>
 
           <div className="back-button">
-            {/*<p><Link className="link-hover-dark" to="/blog-prawniczy">wstecz</Link></p>*/}
-            <CtaButton arrowDirection="left" buttonDesc="powrót" url="/blog-prawniczy"/>
+            <TriggerText threshold=".5" delay=".6">
+              <CtaButton arrowDirection="left" buttonDesc="powrót" url="/blog-prawniczy"/>
+            </TriggerText>
           </div>
 
         </div>

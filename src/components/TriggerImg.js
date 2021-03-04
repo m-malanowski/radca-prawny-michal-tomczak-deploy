@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 const TriggerText = ({children}) => {
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: 0,
+    threshold: .7,
     triggerOnce: false
   });
   const controls = useAnimation();
@@ -12,9 +12,10 @@ const TriggerText = ({children}) => {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
-    }else{
-      controls.start("hidden");
     }
+    // else{
+    //   controls.start("hidden");
+    // }
   }, [controls, inView]);
 
   return (
@@ -23,8 +24,8 @@ const TriggerText = ({children}) => {
       animate={controls}
       initial="hidden"
       variants={{
-        visible: { opacity: 1, y: 0, clipPath: "circle(250% at 100% 100%)",
-          transition: { delay: .2, duration: 2.8}
+        visible: { opacity: 1, y: 0, clipPath: "circle(450% at 100% 100%)",
+          transition: { delay: .2, duration: 2.2}
         },
         hidden: { opacity: 0, y: -20, clipPath: "circle(16.2% at 48% 0)" }
       }}

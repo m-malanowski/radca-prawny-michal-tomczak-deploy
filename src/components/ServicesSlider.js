@@ -63,8 +63,8 @@ const  ArrowRight = (props) => {
 const TeamSlider = (  ) => {
 
   const [currentSlide, setCurrentSlide] = React.useState(0)
-  const [pause, setPause] = React.useState(false)
-  const timer = React.useRef()
+  // const [pause, setPause] = React.useState(false)
+  // const timer = React.useRef()
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
@@ -86,16 +86,16 @@ const TeamSlider = (  ) => {
     // },
   })
 
-  React.useEffect(() => {
-    timer.current = setInterval(() => {
-      if (!pause && slider) {
-        slider.next()
-      }
-    }, 6000)
-    return () => {
-      clearInterval(timer.current)
-    }
-  }, [pause, slider])
+  // React.useEffect(() => {
+  //   timer.current = setInterval(() => {
+  //     if (!pause && slider) {
+  //       slider.next()
+  //     }
+  //   }, 6000)
+  //   return () => {
+  //     clearInterval(timer.current)
+  //   }
+  // }, [pause, slider])
 
 
   return (

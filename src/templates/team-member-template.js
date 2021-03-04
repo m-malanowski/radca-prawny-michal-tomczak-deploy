@@ -5,6 +5,9 @@ import { graphql } from "gatsby"
 import ReactMarkdown from "react-markdown"
 import CtaButton from "../components/CtaButton"
 import SEO from "../components/SEO"
+import { commonVariants } from "../components/variants"
+import { motion } from "framer-motion"
+import TriggerText from "../components/TriggerText"
 
 const TeamMember = ({ data }) => (
   <>
@@ -17,26 +20,38 @@ const TeamMember = ({ data }) => (
 
       <div className="page-content container-fluid">
         <div className="team-member-image img-wrapper">
+          <TriggerText delay=".1" threshold="0.4">
            <Image className="img" fluid={data.team.image.childImageSharp.fluid}/>
+          </TriggerText>
         </div>
 
         <div className="team-member-description">
           <div className="bio-header">
             <div>
-              <h1>{ data.team.name }</h1>
-              <em>{ data.team.position }</em>
+              <TriggerText threshold=".5">
+                <h1>{ data.team.name }</h1>
+              </TriggerText>
+              <TriggerText threshold="1" delay=".2">
+                <em>{ data.team.position }</em>
+              </TriggerText>
             </div>
           </div>
           <br/>
 
-          <ReactMarkdown className="mt-5" source={ data.team.bio }/>
+          <TriggerText threshold="1" delay=".4">
+            <ReactMarkdown className="mt-5" source={ data.team.bio }/>
+          </TriggerText>
 
-          <div className="team-member-details">
-            <p>telefon: { data.team.phone } </p>
-            <p>email: <a className="link-hover-dark" href={"mailto:" + data.team.email }>{ data.team.email }</a></p>
-          </div>
+          <TriggerText threshold=".5" delay=".6">
+            <div className="team-member-details">
+              <p>telefon: { data.team.phone } </p>
+              <p>email: <a className="link-hover-dark" href={"mailto:" + data.team.email }>{ data.team.email }</a></p>
+            </div>
+          </TriggerText>
 
-          <CtaButton arrowDirection="left" buttonDesc="powrót" url="/zespol"/>
+          <TriggerText threshold=".5" delay=".8">
+            <CtaButton arrowDirection="left" buttonDesc="powrót" url="/zespol"/>
+          </TriggerText>
 
         </div>
       </div>
