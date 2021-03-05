@@ -13,7 +13,8 @@ import { TriggerSplit } from "../components/TriggerSplit"
 
 const BlogPrawniczy = ({ data }) => (
   <>
-    <SEO title="⚖️ &nbsp; O Kancelarii | Kancelaria Adwokacka Szymon Mikulak. Porady Prawne Gdynia. Adwokat Gdynia" description="Zadzwoń ☎ 606 502 202. Adwokat Gdynia - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdynia"/>
+    <SEO title="⚖️ &nbsp; Blog Prawniczy | Porady Prawne Gdańsk. Radca Prawny Gdańsk"
+         description="Zadzwoń ☎ 507 455 057. Radca Prawny Gdańsk - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk" />
 
     <div className="blog-page">
       <Subheader pageTitle={'Aktualności'} subImg={subHeaderPhoto}/>

@@ -15,8 +15,8 @@ import aboutImg2 from "../assets/imgs/home-slider/porady-prawne-gdansk-3.webp"
 
 const TeamPage = () => (
   <>
-    <SEO title="⚖️ &nbsp; O Kancelarii | Kancelaria Adwokacka Szymon Mikulak. Porady Prawne Gdynia. Adwokat Gdynia"
-         description="Zadzwoń ☎ 606 502 202. Adwokat Gdynia - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdynia" />
+    <SEO title="⚖️ &nbsp; Zakres Usług | Porady Prawne Gdańsk. Radca Prawny Gdańsk"
+         description="Zadzwoń ☎ 507 455 057. Radca Prawny Gdańsk - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk" />
 
     <div className="services-page">
       <Subheader pageTitle={"Zakres naszych usług, zapoznaj się z naszymi usługami"} subImg={subHeaderPhoto} />
@@ -61,7 +61,7 @@ const TeamPage = () => (
                 </TriggerSplit>
               </p>
             </div>
-            <TriggerText delay=".2" threshold="0.5">
+            <TriggerText delay=".8" threshold="0.5">
               <ServicesSlider />
             </TriggerText>
 
@@ -151,13 +151,13 @@ const TeamPage = () => (
 
       <div className="page-description-wrapper">
         <div className="image-subsection image-subsection__right">
-          <TriggerImg>
+          <TriggerImg threshold="1">
             <img src={aboutImg2} alt="Radca prawny Gdańsk" />
           </TriggerImg>
 
           <div className="image-overlay-text">
             <h3>
-              <TriggerSplit threshold="1">
+              <TriggerSplit threshold="0.7">
                 franzen yr, literally beum incidunt iurx natus perspiciatis soluta.
               </TriggerSplit>
             </h3>
@@ -187,7 +187,7 @@ const TeamPage = () => (
               </p>
               <br/><br/>
               <p>
-                <TriggerSplit threshold=".5">
+                <TriggerSplit threshold=".7">
                   leggings four loko, neutra bespoke lyft hashtag.
                   Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
                   viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal

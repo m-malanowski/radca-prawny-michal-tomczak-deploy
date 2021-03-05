@@ -21,6 +21,7 @@ const TriggerText = ({children, delay, threshold}) => {
       ref={ref}
       animate={controls}
       initial="hidden"
+      exit="hidden"
       variants={{
         visible: { opacity: 1, y: 0,
           transition: { delay:  delay , duration: .5}

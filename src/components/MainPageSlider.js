@@ -9,15 +9,10 @@ import { motion, useAnimation } from "framer-motion"
 import { SplitText } from "./SplitText"
 import { splitTextVariants } from "./variants"
 
-// const icons = {
-//   'left': 'M501.333 245.333H36.417L178.21 103.541c4.167-4.167 4.167-10.917 0-15.083-4.167-4.167-10.917-4.167-15.083 0l-160 160c-4.167 4.167-4.167 10.917 0 15.083l160 160a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125 4.167-4.167 4.167-10.917 0-15.083L36.417 266.667h464.917A10.66 10.66 0 00512.001 256a10.662 10.662 0 00-10.668-10.667z',
-//   'right': 'M508.875 248.458l-160-160c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l141.792 141.792H10.667A10.66 10.66 0 000 256a10.66 10.66 0 0010.667 10.667h464.917L333.792 408.458c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125l160-160c4.166-4.166 4.166-10.916-.001-15.083z',
-// };
 const images = [
   {
     img: img1,
     title: "Kompleksowa obsługa prawna klientów indywidualnych i przedsiębiorców. Kancelaria Radcy Prawnego Michał  ",
-    // beforeTitle: "Adwkoat Gdynia - Szymon Mikulak ",
     buttonText: "O kancelarii",
     url: "/radca-prawny-gdansk",
     id: 1,
@@ -25,7 +20,6 @@ const images = [
   {
     img: img2,
     title: "Najlepiej o naszej dobrej pracy świadczy stale powiększające się grono Klientów.",
-    // beforeTitle: "Zakres Usług",
     buttonText: "Zakres usług",
     url: "/zakres-uslug",
     id: 2,
@@ -34,7 +28,6 @@ const images = [
   {
     img: img3,
     title: "Szukasz rozwiązania swojego problemu? Skontaktuj się ze mną.",
-    // beforeTitle: "Pomogę rozwiązać Twój problem",
     buttonText: "Umów spotkanie",
     url: "/kontakt",
     id: 3,
@@ -83,7 +76,7 @@ const MainPageSlider = (props) => {
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
-    duration: 1500,
+    duration: 2000,
     slides: images.length,
     initial: 0,
     dragSpeed: .3,
@@ -146,33 +139,11 @@ const MainPageSlider = (props) => {
             className="zoom-out__slide"
           >
             <img
-              // exit={{  opacity: 0 }}
-              // initial={{ opacity: 0, }}
-              // animate={{ opacity: 1, transition: {delay: 1.2,  duration: 1., ease: [0.6, 0.01, -0.05, 0.9] } }}
               src={item.img} alt={item.title} />
-
             <div
-              // exit={{ y: 10, opacity: 0 }}
-              // initial={{ opacity: 0, y: 20 }}
-              // animate={{ opacity: 1, y: 0, transition: {delay: 2,  duration: 1., ease: [0.6, 0.01, -0.05, 0.9] } }}
               className="index-slider">
               <div className="container-fluid ">
                 <div className="col-lg-5 col-12">
-
-                  {/*<motion.h1*/}
-                  {/*  animate={controls}*/}
-                  {/*  // exit={{ y: 20, opacity: 0 }}*/}
-                  {/*  variants={{*/}
-                  {/*    visible: {*/}
-                  {/*      opacity: 1, y: 0,*/}
-                  {/*      transition: { delay: .4, duration: .6,  }*/}
-                  {/*    },*/}
-                  {/*    hidden: { opacity: 0, y: -40, }*/}
-                  {/*  }}*/}
-                  {/*>*/}
-                  {/*  {item.title}*/}
-                  {/*</motion.h1>*/}
-
                   <h1>
                     <SplitText
                       initial={{ y: "100%" }}
@@ -217,9 +188,7 @@ const MainPageSlider = (props) => {
       )}
       {slider && (
         <div
-          // initial={{ opacity: 0, y: 20 }}
-          // exit={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0, transition: {delay: 2.2,  duration: 1., ease: [0.6, 0.01, -0.05, 0.9] } }}
+
           className="linesWrapper">
           <ul className="lines">
             {[...Array(slider.details().size).keys()].map((idx) => {

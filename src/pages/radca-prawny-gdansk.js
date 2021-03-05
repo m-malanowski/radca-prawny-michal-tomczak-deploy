@@ -37,7 +37,8 @@ const ProjectsPage = () => {
     "url": "https://radcaprawnytomczak.pl",
     "logo": "https://radcaprawnytomczak.pl/facebook.jpg",
     "sameAs": [
-      "https://www.google.com/maps/d/u/0/edit?mid=1q5MkFFkEu_U21aiml_JCm_ny1CzfDLhD&usp=sharing"
+      "https://www.google.com/maps/d/u/0/edit?mid=1GCWjyo1AqP3O0iREMdxbuDu-HYKiDmeS&usp=sharing",
+      "https://www.facebook.com/Radca-Prawny-Gda%C5%84sk-Micha%C5%82-Tomczak-110583451087567",
     ]
   }
   // const {

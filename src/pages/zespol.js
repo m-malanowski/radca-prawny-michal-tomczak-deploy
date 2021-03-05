@@ -4,17 +4,16 @@ import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-6.web
 import Footer from "../components/Footer"
 import TeamSlider from "../components/TeamSlider"
 import SEO from "../components/SEO"
-// import { motion } from "framer-motion"
 import TriggerText from "../components/TriggerText"
 import { TriggerSplit } from "../components/TriggerSplit"
 
 const TeamPage = () => (
   <>
-    <SEO title="⚖️ &nbsp; O Kancelarii | Kancelaria Adwokacka Szymon Mikulak. Porady Prawne Gdynia. Adwokat Gdynia"
-         description="Zadzwoń ☎ 606 502 202. Adwokat Gdynia - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdynia" />
+    <SEO title="⚖️ &nbsp; Nasz Zespół | Porady Prawne Gdańsk. Radca Prawny Gdańsk"
+         description="Zadzwoń ☎ 507 455 057. Radca Prawny Gdańsk - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk" />
 
     <div className="team-page">
-      <Subheader pageTitle={"Im baby flexitarian art party forage, kinfolk prism overeaćh on vinyl artisan taiyaki tbh"}
+      <Subheader pageTitle={"Im baby flexitarian art party forage, kinfolk prism overeaćh on vinyl artisan"}
                  subImg={subHeaderPhoto} />
 
       <div className="page-content container-fluid">

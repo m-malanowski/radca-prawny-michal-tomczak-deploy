@@ -31,7 +31,7 @@ export function TriggerSplit({ children, threshold,  ...rest  }) {
       >
         <motion.span
           animate={controls}
-          initial={{ y: "100%" }}
+          initial={{ y: "100%", opacity: 0 }}
           exit="hidden"
           variants={splitTextVariants}
           style={{ display: 'inline-block', willChange: 'transform', padding: 0, margin: 0, lineHeight: 1 }}

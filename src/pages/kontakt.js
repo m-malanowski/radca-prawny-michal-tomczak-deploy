@@ -15,14 +15,13 @@ const query = graphql`
     {
         file(relativePath: { eq: "imgs/home-slider/radca-prawny-gdansk-7.webp" }){
             childImageSharp {
-                fluid{
+                fluid(maxWidth: 1920, maxHeight: 1080){
                     ...GatsbyImageSharpFluid
                 }
             }
         }
     }
 `
-
 const Kontakt = () => {
   const {
     file: {
@@ -32,8 +31,8 @@ const Kontakt = () => {
 
   return(
     <>
-      <SEO title="⚖️ &nbsp; O Kancelarii | Kancelaria Adwokacka Szymon Mikulak. Porady Prawne Gdynia. Adwokat Gdynia"
-           description="Zadzwoń ☎ 606 502 202. Adwokat Gdynia - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdynia" />
+      <SEO title="⚖️ &nbsp; Kontakt | Porady Prawne Gdańsk. Radca Prawny Gdańsk"
+           description="Zadzwoń ☎ 507 455 057. Radca Prawny Gdańsk - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk" />
 
       <div className="contact-page">
 

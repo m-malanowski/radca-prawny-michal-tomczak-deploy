@@ -8,7 +8,8 @@ import { graphql } from "gatsby"
 
 const PrivacyPage = ({ data }) => (
   <>
-    <SEO title="⚖️ &nbsp; O Kancelarii | Kancelaria Adwokacka Szymon Mikulak. Porady Prawne Gdynia. Adwokat Gdynia" description="Zadzwoń ☎ 606 502 202. Adwokat Gdynia - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdynia"/>
+    <SEO title="⚖️ &nbsp; Polityka Prywatności | Porady Prawne Gdańsk. Radca Prawny Gdańsk"
+         description="Zadzwoń ☎ 507 455 057. Radca Prawny Gdańsk - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk" />
 
     <div className="policy-page">
       <Subheader pageTitle={'Polityka prywatności'} subImg={subHeaderPhoto}/>
