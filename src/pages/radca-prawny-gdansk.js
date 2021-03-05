@@ -14,6 +14,8 @@ import TriggerImg from "../components/TriggerImg"
 import SEO from "../components/SEO"
 // import { commonVariants, splitTextVariants } from "../components/variants"
 import { TriggerSplit } from "../components/TriggerSplit"
+
+
 const subHeaderImageName = "radca-prawny-gdansk-1.webp"
 //
 // const query = graphql`
@@ -80,7 +82,7 @@ const ProjectsPage = () => {
             <div className="page-content-description">
               <div className="description-first-element">
                 <p>
-                  <TriggerSplit threshold=".5">
+                  <TriggerText threshold=".5">
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -93,11 +95,11 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerSplit>
+                  </TriggerText>
                 </p>
                 <br /><br />
                 <p>
-                  <TriggerSplit threshold=".5">
+                  <TriggerText threshold=".5">
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -110,7 +112,7 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerSplit>
+                  </TriggerText>
                 </p>
 
               </div>
@@ -163,7 +165,7 @@ const ProjectsPage = () => {
             <div className="page-content-description">
               <div className="description-first-element">
                 <p>
-                  <TriggerSplit threshold=".5">
+                  <TriggerText threshold=".5">
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -176,11 +178,11 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerSplit>
+                  </TriggerText>
                 </p>
                 <br /><br />
                 <p>
-                  <TriggerSplit threshold=".5">
+                  <TriggerText threshold=".5">
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -193,7 +195,7 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerSplit>
+                  </TriggerText>
                 </p>
               </div>
               <div className="description-second-element">
@@ -243,7 +245,7 @@ const ProjectsPage = () => {
             <div className="page-content-description">
               <div className="description-first-element">
                 <p>
-                  <TriggerSplit threshold=".5">
+                  <TriggerText threshold=".5">
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -256,7 +258,7 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerSplit>
+                  </TriggerText>
                 </p>
               </div>
               <div className="description-second-element">

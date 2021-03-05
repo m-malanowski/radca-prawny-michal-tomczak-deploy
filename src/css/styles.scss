@@ -147,7 +147,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
   //margin-top: 5rem;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   counter-reset: services;
 }
 
@@ -287,6 +287,7 @@ nav {
   //margin: 0 15px;
   //padding: 0 15px;
   //width: 85%;
+
   left: 10%;
   right: 10%;
   align-items: center;
@@ -924,16 +925,16 @@ Page About
       }
     }
 
-    left: 20%;
+    left: 15%;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     @include for-tablet-landscape-up {
-      position: relative;
       left: 12.5%;
     }
     @include for-phone-only {
-      left: 5%;
+      left: 0;
+      padding-left: 15px;
     }
   }
 }
@@ -1866,10 +1867,6 @@ Team Slider Home And Team
 //  transform: translateY(200%);
 //}
 //
-.arrow-services {
-
-}
-
 .arrows-wrapper-services {
   position: relative;
   bottom: -22rem;
@@ -1899,7 +1896,7 @@ Team Slider Home And Team
     left: 15%;
   }
   @include for-phone-only {
-    left: 20%;
+    left: 20% !important;
   }
 }
 

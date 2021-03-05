@@ -7,7 +7,7 @@ import { layoutVariants, transition } from '../components/variants'
 
 const Navbar = ({toggleSideBar, isOpen}) => {
   return (
-    <nav className="navbar container-fluid">
+    <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
           <motion.a

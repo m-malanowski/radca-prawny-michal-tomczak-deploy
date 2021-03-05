@@ -4,8 +4,6 @@ import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-3.web
 import Footer from "../components/Footer"
 import StickyBox from "react-sticky-box"
 import Button from "../components/CtaButton"
-// import { motion } from "framer-motion"
-// import subsecImg1 from "../assets/imgs/home-slider/porady-prawne-gdansk.webp"
 import SEO from "../components/SEO"
 import ServicesSlider from "../components/ServicesSlider"
 import TriggerText from "../components/TriggerText"
