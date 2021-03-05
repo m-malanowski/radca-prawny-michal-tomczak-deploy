@@ -391,7 +391,7 @@ Pages
 }
 
 .error-page {
-  color: var(--clr-white);
+  color: var(--clr-white) !important;
   margin-bottom: 2rem;
 
   & > div {
@@ -402,11 +402,8 @@ Pages
     }
   }
 
-  //.cta2{
-  //}
   h2 {
     text-transform: uppercase;
-    color: var(--clr-white);
   }
 
   p, a {

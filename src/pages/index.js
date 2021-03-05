@@ -12,7 +12,7 @@ const indexPage = () => {
     "@type": "LocalBusiness",
     "name": "Kancelaria Radcy Prawnego Michał Tomczak",
     "hasMap": "https://www.google.com/maps/d/u/0/edit?mid=1q5MkFFkEu_U21aiml_JCm_ny1CzfDLhD&usp=sharing",
-    "image": "https://radcaprawnytomczak.pl/static/facebook.jpg",
+    "image": "https://radcaprawnytomczak.pl/facebook.jpg",
     "@id": "",
     "url": "https://radcaprawnytomczak.pl",
     "telephone": "+ 48 507 455 057",
