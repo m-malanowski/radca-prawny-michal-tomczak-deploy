@@ -69,7 +69,6 @@ const  ArrowRight = (props) => {
 const MainPageSlider = (props) => {
   const [details, setDetails] = React.useState(null)
   const controls = useAnimation()
-  // const controls2 = useAnimation()
   const [currentSlide, setCurrentSlide] = React.useState(0)
   const [pause, setPause] = React.useState(false)
   const timer = React.useRef()
@@ -138,7 +137,17 @@ const MainPageSlider = (props) => {
             style={positionStyle(idx)}
             className="zoom-out__slide"
           >
-            <img
+            <motion.img
+              initial={{opacity: 0 , scale: 1.2}}
+              animate={{
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: 3.4,
+                  duration: 1,
+                  ease: [0.6, 0.01, -0.05, 0.9]
+                }
+              }}
               src={item.img} alt={item.title} />
             <div
               className="index-slider">

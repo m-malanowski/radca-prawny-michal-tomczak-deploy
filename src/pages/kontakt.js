@@ -1,7 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
 import SEO from "../components/SEO"
-import contactImg from "../assets/imgs/home-slider/radca-prawny-gdansk-7.webp"
 import { commonVariants, splitTextVariants, transition } from "../components/variants"
 import { SplitText } from "../components/SplitText"
 import { graphql, useStaticQuery } from "gatsby"

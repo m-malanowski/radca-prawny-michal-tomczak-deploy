@@ -13,9 +13,9 @@ module.exports = {
     // image: "/twitter-img.png",
     siteUrl: "https://radcaprawnytomczak.pl",
   },
-  flags: {
-    DEV_SSR: false,
-  },
+  // flags: {
+  //   DEV_SSR: false,
+  // },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,

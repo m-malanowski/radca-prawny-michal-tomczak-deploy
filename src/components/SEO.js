@@ -1,6 +1,5 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({title, description, schemaMarkup}) => {
   return <Helmet htmlAttributes={{ lang: "pl" }} title={title} >
@@ -16,7 +15,3 @@ const SEO = ({title, description, schemaMarkup}) => {
 }
 
 export default SEO
-
-
-// TODO
-// Dodać MetaDane Organization itp

@@ -124,18 +124,7 @@ const TeamSlider = (  ) => {
         </div>
 
       ))}
-
-        {/*<div className="member-wrapper keen-slider__slide">*/}
-        {/*  <div className="img-wrapper">*/}
-        {/*    /!*<div className="img"></div>*!/*/}
-        {/*    <img src={img2} alt="" />*/}
-        {/*  </div>*/}
-        {/*  <h4>Imię Nazwisko I</h4>*/}
-        {/*  <p>Stanowisko</p>*/}
-        {/*</div>*/}
-
       </div>
-      {/*<div className="team-member-modal is-open"/>*/}
 
     </>
   )

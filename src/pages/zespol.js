@@ -21,7 +21,7 @@ const TeamPage = () => (
           <div className="page-content-description">
             <div className="description-first-element">
               <p>
-                <TriggerSplit threshold=".5">
+                <TriggerText threshold=".5">
                   leggings four loko, neutra bespoke lyft hashtag.
                   Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
                   viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
@@ -32,7 +32,7 @@ const TeamPage = () => (
                   Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                   Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                   cold-pressed williamsburg selfies live-edge butcher tacos
-                </TriggerSplit>
+                </TriggerText>
               </p>
             </div>
             <div className="description-second-element">
@@ -57,7 +57,7 @@ const TeamPage = () => (
           <div className="page-content-description">
             <div className="description-first-element">
               <p>
-                <TriggerSplit threshold=".5">
+                <TriggerText threshold=".5">
                   leggings four loko, neutra bespoke lyft hashtag.
                   Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
                   viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
@@ -68,11 +68,11 @@ const TeamPage = () => (
                   Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                   Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                   cold-pressed williamsburg selfies live-edge butcher tacos
-                </TriggerSplit>
+                </TriggerText>
               </p>
               <br /><br />
               <p>
-                <TriggerSplit threshold=".8">
+                <TriggerText threshold=".8">
                   leggings four loko, neutra bespoke lyft hashtag.
                   Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
                   viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
@@ -83,7 +83,7 @@ const TeamPage = () => (
                   Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                   Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                   cold-pressed williamsburg selfies live-edge butcher tacos
-                </TriggerSplit>
+                </TriggerText>
               </p>
             </div>
             <div className="description-second-element">

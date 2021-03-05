@@ -44,7 +44,6 @@ const NavLink = props => (
         style: {
           color: isCurrent ? "#ffffff" : "hsla(0,0%,100%, .6)",
 
-
           // color: (condition) ? (true block) : ((condition2) ? (true block2) : (else block2)),
           // borderBottom: isCurrent ? "1px solid white" : "none"
         }

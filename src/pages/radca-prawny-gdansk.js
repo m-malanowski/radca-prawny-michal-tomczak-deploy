@@ -4,7 +4,6 @@ import Subheader from "../components/Subheader"
 import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-1.webp"
 import aboutImg1 from "../assets/imgs/home-slider/porady-prawne-gdansk.webp"
 import aboutImg2 from "../assets/imgs/home-slider/porady-prawne-gdansk-2.webp"
-import Image from "gatsby-image"
 import Footer from "../components/Footer"
 import Button from "../components/CtaButton"
 // import { useInView } from "react-intersection-observer"
@@ -16,7 +15,7 @@ import SEO from "../components/SEO"
 import { TriggerSplit } from "../components/TriggerSplit"
 
 
-const subHeaderImageName = "radca-prawny-gdansk-1.webp"
+// const subHeaderImageName = "radca-prawny-gdansk-1.webp"
 //
 // const query = graphql`
 //     query ($path: String="imgs/home-slider/radca-prawny-gdansk-1.webp") {

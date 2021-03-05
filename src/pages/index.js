@@ -66,7 +66,7 @@ const indexPage = () => {
           }
         }}
       >
-        <svg width={80} height={119} xmlns="http://www.w3.org/2000/svg" className="initialLogo">
+        <svg width="80" height="119" xmlns="http://www.w3.org/2000/svg" className="initialLogo">
           <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M58.209 38.042L40.0002 56.2508L21.7914 38.042H11.4707V41.9622C15.6229 41.9622 19.0006 45.3296 19.021 49.4749V68.5333C19.021 72.6957 15.6331 76.0836 11.4707 76.0836V80.0038H30.4881V78.0454V76.087C26.3257 76.087 22.9412 72.6991 22.9412 68.5367V49.5193C22.9412 49.5057 22.9412 49.4954 22.9412 49.4818V44.7394L40.0002 61.7984L57.0592 44.7394V49.5125C57.0592 49.5159 57.0592 49.5159 57.0592 49.5193V68.5401C57.0592 72.7025 53.6713 76.0904 49.5089 76.0904V80.0106C49.5123 80.0106 49.5123 80.0106 49.5123 80.0106H68.5297V78.0522V76.0938H68.4922C64.3434 76.0734 60.976 72.6923 60.976 68.5435V49.5057C60.9794 45.3433 64.3639 41.9622 68.5263 41.9622V38.042H58.209Z" fill="white"/>
           <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M41.9593 87.5508H38.0425C38.0425 91.7132 34.6546 95.1011 30.4922 95.1011V99.0213H49.513V95.1011C45.3472 95.1045 41.9593 91.7166 41.9593 87.5508Z" fill="white"/>
           <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M41.9612 68.5293H38.041V87.5501H41.9612V68.5293Z" fill="white"/>
@@ -76,6 +76,8 @@ const indexPage = () => {
 
         <div className="svg-container">
           <motion.img
+            width="605"
+            height="30"
             initial={{ y: "100%", opacity: 0 }}
             animate={{
               y: 0,
@@ -88,6 +90,8 @@ const indexPage = () => {
             }}
             src={letterLogoUpper} alt="" />
           <motion.img
+            width="477"
+            height="16"
             initial={{ y: "100%", opacity: 0 }}
             animate={{
               y: 0,
@@ -104,6 +108,7 @@ const indexPage = () => {
       </motion.div>
 
       <motion.div
+        style={{overflow: "hidden"}}
         initial={{opacity: 0 }}
         animate={{
           opacity: 1,

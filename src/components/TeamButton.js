@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-const TeamButtonOld = ({url, arrowDirection}) => {
+const TeamButtonOld = ({ arrowDirection }) => {
   return(
     <div className="team-button">
       <a className={arrowDirection}>

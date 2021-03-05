@@ -5,8 +5,6 @@ import { graphql } from "gatsby"
 import ReactMarkdown from "react-markdown"
 import CtaButton from "../components/CtaButton"
 import SEO from "../components/SEO"
-import { commonVariants } from "../components/variants"
-import { motion } from "framer-motion"
 import TriggerText from "../components/TriggerText"
 
 const TeamMember = ({ data }) => (

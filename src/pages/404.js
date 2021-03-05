@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/SEO"
-// import Button from "../components/CtaButton"
 
 const Error = () => {
   return (
@@ -12,7 +11,6 @@ const Error = () => {
           <h2>404</h2>
           <h5>Przepraszamy, ale strona której szukasz nie istnieje. Naciśnij przycisk poniżej aby wrócić do strony głównej.</h5>
           <Link to="/"> <p> Wróć na główną</p> </Link>
-          {/*<Button classname="mt-5" url="/" buttonDesc=" Wróć na główną " arrowDirection={"left"}/>*/}
         </div>
       </div>
     </>

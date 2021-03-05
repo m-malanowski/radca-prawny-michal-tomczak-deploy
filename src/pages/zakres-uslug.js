@@ -20,32 +20,11 @@ const TeamPage = () => (
       <Subheader pageTitle={"Zakres naszych usług, zapoznaj się z naszymi usługami"} subImg={subHeaderPhoto} />
       <div className="page-content container-fluid">
 
-        {/*<div className="page-description-wrapper">*/}
-        {/*  <div className="page-content-description">*/}
-        {/*    <div className="description-first-element">*/}
-        {/*      <motion.p variants={variants} initial="initial" animate="enter">Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-        {/*        Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag pok pok retro messenger bag health*/}
-        {/*        goth.*/}
-        {/*      </motion.p>*/}
-        {/*      <br/><br/>*/}
-        {/*      <motion.p variants={variants} initial="initial" animate="enter">Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag.*/}
-        {/*        Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim.*/}
-        {/*        Four loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-        {/*        goth. Pop-up normcore health goth, trust fund iceland tumblr cloud bread cornhole VHS meggings direct trade kale chips vexillologist schlitz.*/}
-        {/*        Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha. Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast cold-pressed williamsburg selfies live-edge butcher tacos*/}
-        {/*      </motion.p>*/}
-        {/*    </div>*/}
-        {/*    <div className="description-second-element">*/}
-        {/*      <motion.h2 variants={variants} initial="initial" animate="enter" className="quote">Ogólne informacje franzen yr, <em> literally beum incidunt </em> iurx natus perspiciatis soluta.</motion.h2>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-
         <div className="services-wrapper">
           <div className="service-container">
             <div className="single-service">
               <p>
-                <TriggerSplit threshold=".5">
+                <TriggerText threshold=".5">
                   leggings four loko, neutra bespoke lyft hashtag.
                   Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
                   viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
@@ -56,81 +35,13 @@ const TeamPage = () => (
                   Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                   Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                   cold-pressed williamsburg selfies live-edge butcher tacos
-                </TriggerSplit>
+                </TriggerText>
               </p>
             </div>
             <TriggerText delay=".8" threshold="0.5">
               <ServicesSlider />
             </TriggerText>
 
-            {/*  <div className="single-service">*/}
-            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-            {/*      Asymmetrical franzen yr.</p>*/}
-            {/*  </div>*/}
-            {/*  <div className="single-service">*/}
-            {/*    /!*<div className="line"/>*!/*/}
-            {/*    <h2>Prawo pracy</h2>*/}
-            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-            {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
-            {/*      pok pok retro messenger bag health*/}
-            {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
-            {/*      brooklyn sriracha flexitarian whatever.*/}
-            {/*    </p>*/}
-            {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
-
-            {/*  </div>*/}
-
-            {/*  <div className="single-service">*/}
-            {/*    /!*<div className="line"/>*!/*/}
-            {/*    <h2>Prawo rodzinne</h2>*/}
-            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-            {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
-            {/*      pok pok retro messenger bag health*/}
-            {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
-            {/*      brooklyn sriracha flexitarian whatever.*/}
-            {/*    </p>*/}
-            {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
-
-            {/*  </div>*/}
-
-            {/*  <div className="single-service">*/}
-            {/*    /!*<div className="line"/>*!/*/}
-            {/*    <h2>Prawo gospodarcze</h2>*/}
-            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-            {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
-            {/*      pok pok retro messenger bag health*/}
-            {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
-            {/*      brooklyn sriracha flexitarian whatever.*/}
-            {/*    </p>*/}
-            {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
-
-            {/*  </div>*/}
-            {/*  <div className="single-service">*/}
-            {/*    /!*<div className="line"/>*!/*/}
-            {/*    <h2>Prawo administracyjne</h2>*/}
-            {/*    <p>Fixie coloring book beard biodiesel leggings four loko, neutra bespoke lyft hashtag. Slow-carb tilde*/}
-            {/*      taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle viral. Forage*/}
-            {/*      truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal raw denim. Four*/}
-            {/*      loko franzen chicharrones street art, narwhal man braid kogi hella plaid pour-over.*/}
-            {/*      Asymmetrical franzen yr, literally bicycle rights cray vexillologist cornhole taiyaki hell of humblebrag*/}
-            {/*      pok pok retro messenger bag health*/}
-            {/*      live-edge. Organic thundercats af 8-bit swag hashtag ramps authentic skateboard, cronut meggings*/}
-            {/*      brooklyn sriracha flexitarian whatever.*/}
-            {/*    </p>*/}
-            {/*    <ButtonRight url="/kontakt" buttonDesc="Umów spotkanie" />*/}
-            {/*  </div>*/}
           </div>
 
           <div className="specialization-container">
@@ -170,7 +81,7 @@ const TeamPage = () => (
           <div className="page-content-description">
             <div className="description-first-element">
               <p>
-                <TriggerSplit threshold=".5">
+                <TriggerText threshold=".5">
                   leggings four loko, neutra bespoke lyft hashtag.
                   Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
                   viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
@@ -181,11 +92,11 @@ const TeamPage = () => (
                   Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                   Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                   cold-pressed williamsburg selfies live-edge butcher tacos
-                </TriggerSplit>
+                </TriggerText>
               </p>
               <br/><br/>
               <p>
-                <TriggerSplit threshold=".7">
+                <TriggerText threshold=".7">
                   leggings four loko, neutra bespoke lyft hashtag.
                   Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue bottle
                   viral. Forage truffaut cornhole, pitchfork crucifix offal pok pok paleo literally activated charcoal
@@ -196,7 +107,7 @@ const TeamPage = () => (
                   Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                   Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                   cold-pressed williamsburg selfies live-edge butcher tacos
-                </TriggerSplit>
+                </TriggerText>
               </p>
             </div>
             <div className="description-second-element">

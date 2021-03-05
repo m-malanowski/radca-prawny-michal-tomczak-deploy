@@ -4,9 +4,7 @@ import Sidebar from "./Sidebar"
 import { motion, AnimatePresence } from "framer-motion"
 import { layoutVariants, transition } from '../components/variants'
 
-
-const Layout = ({ children, location, props }) => {
-
+const Layout = ({ children, location}) => {
   const [isOpen, setIsOpen] = React.useState(false)
   const toggleSideBar = () => {
     setIsOpen(!isOpen)

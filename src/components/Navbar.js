@@ -33,7 +33,7 @@ const Navbar = ({toggleSideBar, isOpen}) => {
             {/*  <path d="M22.8656 17.2033H28.5283V37.1317H31.4684V17.2033H37.1312C40.253 17.2033 42.7939 19.7442 42.7939 22.866H45.734V14.2632H37.1312H22.8656H14.2627V22.866H17.2028C17.2028 19.7442 19.7438 17.2033 22.8656 17.2033Z" fill="white"/>*/}
 
             {/*</svg>*/}
-            <img src={logo} alt="" />
+            <img src={logo} alt="Radca prawny Gdańsk" />
           </motion.a>
 
           <button type="button" className="toggle-btn" onClick={toggleSideBar} aria-label="menu-button">

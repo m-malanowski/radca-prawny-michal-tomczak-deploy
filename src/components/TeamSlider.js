@@ -4,21 +4,7 @@ import "keen-slider/keen-slider.min.css"
 import TeamButton from "./TeamButton"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
-// import TeamMember from "./TeamMember"
 
-// const ArrowLeft = (props) => {
-//   const disabeld = props.disabled ? " arrow--disabled" : ""
-//   return (
-//     <svg
-//       onClick={props.onClick}
-//       className={"arrow-team arrow--left" + disabeld}
-//       xmlns="http://www.w3.org/2000/svg"
-//       viewBox="0 0 24 24"
-//     >
-//       <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-//     </svg>
-//   )
-// }
 
 const ArrowLeft = (props) => {
   return (
@@ -91,7 +77,6 @@ const TeamSlider = ( props ) => {
   const [sliderRef, slider] = useKeenSlider({
     initial: 0,
     slidesPerView: 3,
-    // mode: "free-snap",
     centered: false,
     spacing: 15,
     loop: true,
@@ -102,9 +87,6 @@ const TeamSlider = ( props ) => {
         slidesPerView: 1,
       },
     },
-    // slideChanged(s) {
-    //   setCurrentSlide(s.details().relativeSlide)
-    // },
   })
 
   // React.useEffect(() => {
