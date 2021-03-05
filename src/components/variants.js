@@ -36,9 +36,9 @@ const commonVariants = {
     }
   },
   exit: {
-    y: 20,
+    y: 5,
     opacity: 0,
-    transition: { delay: .2, duration: .5 }
+    transition: { delay: .2, duration: .6 }
   }
 }
 

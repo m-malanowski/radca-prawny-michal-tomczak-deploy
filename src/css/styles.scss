@@ -1834,6 +1834,11 @@ Team Slider Home And Team
 //  transform: translateY(200%);
 //}
 //
+
+.index-arrow-container{
+  overflow: hidden;
+}
+
 .arrows-wrapper-services {
   position: relative;
   bottom: -22rem;
@@ -2047,6 +2052,7 @@ Team Slider Home And Team
 }
 
 .linesWrapper {
+  overflow: hidden;
   position: absolute;
   left: 10%;
   bottom: 10%;

@@ -29,7 +29,7 @@ const ComponentName = ({ data }) => {
               <TriggerText threshold=".5">
                 <h1>{ data.blog.title }</h1>
               </TriggerText>
-              <TriggerText threshold="1" delay=".2">
+              <TriggerText >
                 <em className="em-bt">{ data.blog.date }</em>
               </TriggerText>
 

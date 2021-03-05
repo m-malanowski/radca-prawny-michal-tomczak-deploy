@@ -26,7 +26,7 @@ const TriggerText = ({children, delay, threshold}) => {
         visible: { opacity: 1, y: 0,
           transition: { delay:  delay , duration: .5}
         },
-        hidden: { opacity: 0, y: 20 }
+        hidden: { opacity: 0, y: 10 }
       }}
 
     >

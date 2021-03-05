@@ -7,7 +7,7 @@ import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
 import Button from "../components/CtaButton"
 import { motion, useAnimation } from "framer-motion"
 import { SplitText } from "./SplitText"
-import { splitTextVariants } from "./variants"
+import { splitTextVariants, commonVariants } from "./variants"
 
 const images = [
   {
@@ -184,7 +184,7 @@ const MainPageSlider = (props) => {
         ))}
       </div>
       {slider && (
-        <div>
+        <motion.div  variants={commonVariants} initial="initial" animate="enter" exit="exit" className="index-arrow-container">
           <ArrowLeft
             onClick={(e) => e.stopPropagation() || slider.prev()}
             disabled={currentSlide === 0}
@@ -193,11 +193,10 @@ const MainPageSlider = (props) => {
             onClick={(e) => e.stopPropagation() || slider.next()}
             disabled={currentSlide === slider.details().size - 1}
           />
-        </div>
+        </motion.div>
       )}
       {slider && (
-        <div
-
+        <motion.div  variants={commonVariants} initial="initial" animate="enter" exit="exit"
           className="linesWrapper">
           <ul className="lines">
             {[...Array(slider.details().size).keys()].map((idx) => {
@@ -219,7 +218,7 @@ const MainPageSlider = (props) => {
               )
             })}
           </ul>
-        </div>
+        </motion.div>
       )}
     </>
   )
