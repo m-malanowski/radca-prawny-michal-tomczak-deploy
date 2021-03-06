@@ -32,7 +32,6 @@ const Kontakt = () => {
     <>
       <SEO title="⚖️ &nbsp; Kontakt | Porady Prawne Gdańsk. Radca Prawny Gdańsk"
            description="Zadzwoń ☎ 507 455 057. Radca Prawny Gdańsk - Sprawy Cywilne, Sprawy Karne, Porady Prawne Gdańsk" />
-
       <div className="contact-page">
 
         {/*<img className="img" src={contactImg} alt="radca prawny" />*/}

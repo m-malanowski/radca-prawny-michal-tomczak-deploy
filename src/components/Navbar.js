@@ -36,11 +36,21 @@ const Navbar = ({toggleSideBar, isOpen}) => {
             <img src={logo} alt="Radca prawny Gdańsk" />
           </motion.a>
 
-          <button type="button" className="toggle-btn" onClick={toggleSideBar} aria-label="menu-button">
+          <motion.button
+            initial={{
+              opacity: 0,
+              y: '20px'
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+            }}
+            transition={{delay: 1.3, duration: 1., ease: [0.6, 0.01, -0.05, 0.9]}}
+            type="button" className="toggle-btn" onClick={toggleSideBar} aria-label="menu-button">
             <div className={`nav-icon ${isOpen? "transformed" : ""}`}>
               <div/>
             </div>
-          </button>
+          </motion.button>
         </div>
       </div>
       <PageLinks styleClass="nav-links"/>

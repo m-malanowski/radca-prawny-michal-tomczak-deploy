@@ -49,7 +49,7 @@ const layoutVariants = {
   enter: {
     opacity: 1,
     transition: {
-      duration: .4,
+      duration: .6,
       delay: .1,
       // when: "beforeChildren",
       ease: [0.6, 0.01, -0.05, 0.9]
