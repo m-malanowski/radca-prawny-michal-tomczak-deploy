@@ -116,17 +116,8 @@ const ProjectsPage = () => {
 
               </div>
               <div className="description-second-element">
-                {/*<motion.h2 variants={commonVariants} initial="initial" animate="enter" className="quote">Ogólne informacje*/}
-                {/*  franzen yr, <em> literally beum incidunt </em> iurx natus perspiciatis soluta.*/}
-                {/*</motion.h2>*/}
                 <h2 className="quote">
-                  <TriggerSplit
-                    threshold="1"
-                    // initial={{ y: "100%" }}
-                    // animate="visible"
-                    // exit="hidden"
-                    // variants={splitTextVariants}
-                  >
+                  <TriggerSplit threshold="1">
                     franzen yr, literally beum incidunt iurx natus perspiciatis soluta.
                   </TriggerSplit>
                 </h2>
@@ -138,23 +129,19 @@ const ProjectsPage = () => {
         <div className="page-description-wrapper">
           <div className="image-subsection image-subsection__right">
 
-            <TriggerImg>
+            <TriggerImg threshold="7">
               <img src={aboutImg1} alt="Radca prawny Gdańsk" />
             </TriggerImg>
 
             <div className="image-overlay-text">
-              {/*<TriggerText delay=".4" threshold="0.7">*/}
-              {/*<h3>Lorem ipsum dolor sit amet, <br /> <em>consectetur adipisicing elit.</em> <br /> <span>architecto at libero nostrum.</span>*/}
-              {/*</h3>*/}
               <h3>
-                <TriggerSplit
-                  threshold="1"
-                >
+                <TriggerSplit threshold="0.7">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. architecto at libero nostrum.
                 </TriggerSplit>
               </h3>
-              {/*</TriggerText>*/}
-              <Button classname="mt-5" url="/zespol" buttonDesc="Zespół" />
+              <TriggerText delay=".4" threshold="0.7">
+                <Button classname="mt-5" url="/zespol" buttonDesc="Zespół" />
+              </TriggerText>
             </div>
           </div>
         </div>
@@ -199,8 +186,6 @@ const ProjectsPage = () => {
               </div>
               <div className="description-second-element">
                 <TriggerText delay=".4" threshold="0.7">
-                  {/*<h2 className="quote">Etyka pracy literally <em> beum incidunt iurx natus</em> perspiciatis soluta.*/}
-                  {/*</h2>*/}
                   <h3 className="quote">
                     <TriggerSplit
                       threshold="1"
@@ -219,22 +204,17 @@ const ProjectsPage = () => {
 
             <TriggerImg>
               <img src={aboutImg2} alt="Radca prawny Gdańsk" />
-              {/*<Image className="img" fluid={fluid} style={{overflow: "visible", position: "static"}}/>*/}
             </TriggerImg>
 
             <div className="image-overlay-text">
-              {/*<TriggerText delay=".4" threshold="0.7">*/}
-              {/*<h3>Lorem ipsum dolor sit amet, <br /> <em>consectetur adipisicing elit.</em> <br /> <span>architecto at libero nostrum.</span>*/}
-              {/*</h3>*/}
               <h3>
-                <TriggerSplit
-                  threshold="1"
-                >
+                <TriggerSplit threshold="0.7">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. architecto at libero nostrum.
                 </TriggerSplit>
               </h3>
-              {/*</TriggerText>*/}
-              <Button classname="mt-5" url="/zespol" buttonDesc="Zespół" />
+              <TriggerText delay=".4" threshold="0.7">
+                <Button classname="mt-5" url="/zespol" buttonDesc="Zespół" />
+              </TriggerText>
             </div>
           </div>
         </div>
@@ -261,10 +241,6 @@ const ProjectsPage = () => {
                 </p>
               </div>
               <div className="description-second-element">
-                {/*<TriggerText delay=".4" threshold="0.7">*/}
-                {/*<h2 className="quote">Wynagrodzenie literally beum <em>incidunt iurx</em> natus perspiciatis soluta.*/}
-                {/*</h2>*/}
-                {/*</TriggerText>*/}
                 <h3 className="quote">
                   <TriggerSplit threshold="1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. architecto at libero nostrum.

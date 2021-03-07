@@ -60,7 +60,7 @@ const TeamPage = () => (
 
       <div className="page-description-wrapper">
         <div className="image-subsection image-subsection__right">
-          <TriggerImg threshold="1">
+          <TriggerImg threshold="7">
             <img src={aboutImg2} alt="Radca prawny Gdańsk" />
           </TriggerImg>
 
@@ -70,8 +70,9 @@ const TeamPage = () => (
                 franzen yr, literally beum incidunt iurx natus perspiciatis soluta.
               </TriggerSplit>
             </h3>
-            <Button classname="mt-5" url="/kontakt" buttonDesc="Umów spotkanie" />
-
+            <TriggerText delay=".4" threshold="0.7">
+              <Button classname="mt-5" url="/kontakt" buttonDesc="Umów spotkanie" />
+            </TriggerText>
           </div>
         </div>
       </div>

@@ -65,6 +65,7 @@ const tempLinks = data.map(link => {
         opacity: 1,
       }}
       transition={{delay: 1.3, duration: 1., ease: [0.6, 0.01, -0.05, 0.9]}}
+      // variants={commonVariants}
     >
       <NavLink aria-current="location" to={link.url}>{link.text}</NavLink>
     </motion.li>

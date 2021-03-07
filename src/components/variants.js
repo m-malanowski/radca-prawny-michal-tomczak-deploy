@@ -105,10 +105,30 @@ const pathVariantsOuter = {
   }
 }
 
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      // delay: 5,
+      staggerChildren: 0.2,
+      ease: [0.6, 0.01, -0.05, 0.9],
+      delayChildren: 0.5,
+    }
+  }
+}
+
+const staggerItem = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 }
+}
+
 export { splitTextVariants }
 export { transition }
 export { commonVariants }
 export { layoutVariants }
 export { pathVariants }
 export { pathVariantsOuter }
+export { staggerContainer }
+export { staggerItem }
 

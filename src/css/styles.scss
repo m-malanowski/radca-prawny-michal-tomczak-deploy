@@ -2291,10 +2291,10 @@ Fake Loader && Page Transition
   stroke-width: 1;
   stroke-linejoin: round;
   stroke-linecap: round;
+  transform: scale(.8);
   //stroke-dasharray: 100;
   @include for-phone-only {
-    //width: 80%;
-    //height: auto;
+    transform: scale(1);
   }
 }
 
@@ -2341,8 +2341,10 @@ Fake Loader && Page Transition
   .svg-container {
     display: flex;
     flex-direction: column;
+    transform: scale(.8);
 
     @include for-phone-only {
+      //transform: scale(1);
       img:nth-of-type(1){
         width: 80%;
         height: auto;

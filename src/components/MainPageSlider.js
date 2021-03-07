@@ -139,6 +139,7 @@ const MainPageSlider = (props) => {
           >
             <motion.img
               initial={{opacity: 0 , scale: 1.2}}
+              // exit={{ scale: .98,  transition: { duration: .6, ease: [0.6, 0.01, -0.05, 0.9]} }}
               animate={{
                 scale: 1,
                 opacity: 1,
