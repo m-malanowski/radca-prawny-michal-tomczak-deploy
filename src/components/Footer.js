@@ -24,7 +24,7 @@ const Footer = () => {
           <ul>
             <li><a className="link-hover" href="https://www.facebook.com/Radca-Prawny-Gda%C5%84sk-Micha%C5%82-Tomczak-110583451087567">Facebook</a></li>
             <li><a className="link-hover" href="https://g.page/radca-prawny-tomczak?we">Google</a></li>
-            <li><a className="link-hover" href="#">Twitter</a></li>
+            <li><a className="link-hover" href="https://twitter.com/MichaRadca">Twitter</a></li>
           </ul>
           <ul>
             <li><Link className="link-hover" to={"/polityka-prywatnosci"}>Polityka prywatności</Link></li>

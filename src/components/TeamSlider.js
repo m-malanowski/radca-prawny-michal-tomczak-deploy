@@ -127,7 +127,7 @@ const TeamSlider = ( props ) => {
           <div>
             <Link to={ member.slug}>
               <h4>{member.name}</h4>
-              <p>{ member.position }</p>
+              <p>Zobacz profil</p>
             </Link>
           </div>
         </div>
