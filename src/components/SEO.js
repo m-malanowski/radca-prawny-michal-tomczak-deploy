@@ -8,7 +8,7 @@ const SEO = ({title, description, schemaMarkup}) => {
     <meta property="og:type" content="website"/>
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://radcaprawnytomczak.pl/facebook.jpg"/>
+    <meta property="og:image" content="https://radcaprawnytomczak.pl/facebook-radcaprawny.jpg"/>
 
     {schemaMarkup &&
       <script type="application/ld+json">

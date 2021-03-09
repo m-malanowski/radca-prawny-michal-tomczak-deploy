@@ -36,7 +36,7 @@ const ProjectsPage = () => {
     "name": "Kancelaria Radcy Prawnego Michał Tomczak",
     "alternateName": "Radca Prawnyy Gdańsk",
     "url": "https://radcaprawnytomczak.pl",
-    "logo": "https://radcaprawnytomczak.pl/facebook.jpg",
+    "logo": "https://radcaprawnytomczak.pl/MichałTomczakRadcaPrawny.png",
     "sameAs": [
       "https://www.google.com/maps/d/u/0/edit?mid=1GCWjyo1AqP3O0iREMdxbuDu-HYKiDmeS&usp=sharing",
       "https://www.facebook.com/Radca-Prawny-Gda%C5%84sk-Micha%C5%82-Tomczak-110583451087567",
