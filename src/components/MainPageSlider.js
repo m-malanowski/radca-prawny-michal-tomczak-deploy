@@ -1,9 +1,9 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css";
-import img1 from "../assets/imgs/home-slider/radca-prawny-gdansk-1b.webp"
-import img2 from "../assets/imgs/home-slider/radca-prawny-gdansk-6b.webp"
-import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5b.webp"
+import img1 from "../assets/imgs/home-slider/radca-prawny-gdansk-1c.webp"
+import img2 from "../assets/imgs/home-slider/radca-prawny-gdansk-6c.webp"
+import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5c.webp"
 import Button from "../components/CtaButton"
 import { motion, useAnimation } from "framer-motion"
 import { SplitText } from "./SplitText"
