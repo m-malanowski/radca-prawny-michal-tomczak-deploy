@@ -1,7 +1,7 @@
 import React from "react"
 // import { graphql, useStaticQuery } from "gatsby"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-1b.webp"
+import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-1c.webp"
 import aboutImg1 from "../assets/imgs/home-slider/porady-prawne-gdansk.webp"
 import aboutImg2 from "../assets/imgs/home-slider/porady-prawne-gdansk-2.webp"
 import Footer from "../components/Footer"
