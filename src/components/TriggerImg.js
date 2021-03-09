@@ -28,7 +28,7 @@ const TriggerText = ({children, threshold}) => {
       variants={{
         // visible: { opacity: 1, y: 0, clipPath: "circle(450% at 100% 100%)",
         visible: { opacity: 1, y: 0,
-            transition: { delay: .2, duration: 1.6}
+            transition: { delay: .2, duration: 1.2}
         },
         hidden: { opacity: 0, y: -20 }
         // hidden: { opacity: 0, y: -20, clipPath: "circle(16.2% at 48% 0)" }
