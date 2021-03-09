@@ -52,7 +52,8 @@
   --clr-primary-1: hsl(213, 92%, 10%);
   --clr-primary-2: hsl(213, 92%, 12%);
   --clr-primary-3: hsl(213, 96%, 14%);
-  --clr-primary-4: hsl(213, 97%, 16%);
+  //--clr-primary-4: hsl(213, 97%, 20%);
+  --clr-primary-4: #003864;
   //--clr-primary-5: #012754;
   --clr-primary-5: #0152a1;
   /* lighter shades of primary color */
@@ -336,6 +337,7 @@ nav {
 
   & li {
     font-family: var(--ff-secondary);
+    font-weight: bold;
     @include for-desktop-up {
       margin-left: 3rem;
     }
@@ -345,12 +347,12 @@ nav {
     //font-size: calc(12px + (13 - 12) * ((100vw - 320px) / (1900 - 320)));
     font-size: 12px;
     letter-spacing: 2px;
-
+    font-weight: 900 !important;
     @include for-desktop-up {
       text-transform: uppercase;
       color: var(--clr-white);
       font-weight: normal;
-      letter-spacing: var(--spacing-menu-links);
+      //letter-spacing: var(--spacing-menu-links);
       transition: var(--transition);
       padding: 0.5rem 0;
     }
