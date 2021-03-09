@@ -1,6 +1,6 @@
 import React from "react"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-6.webp"
+import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-6b.webp"
 import Footer from "../components/Footer"
 import TeamSlider from "../components/TeamSlider"
 import SEO from "../components/SEO"

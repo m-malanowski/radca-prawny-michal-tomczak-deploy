@@ -1,9 +1,9 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css";
-import img1 from "../assets/imgs/home-slider/radca-prawny-gdansk-1.webp"
-import img2 from "../assets/imgs/home-slider/radca-prawny-gdansk-3.webp"
-import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
+import img1 from "../assets/imgs/home-slider/radca-prawny-gdansk-1b.webp"
+import img2 from "../assets/imgs/home-slider/radca-prawny-gdansk-6b.webp"
+import img3 from "../assets/imgs/home-slider/radca-prawny-gdansk-5b.webp"
 import Button from "../components/CtaButton"
 import { motion, useAnimation } from "framer-motion"
 import { SplitText } from "./SplitText"
@@ -153,7 +153,18 @@ const MainPageSlider = (props) => {
             <div
               className="index-slider">
               <div className="container-fluid ">
-                <div className="col-lg-5 col-12">
+                <motion.div
+                  initial={{opacity: 0 , scale: .85}}
+                  animate={{
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                      delay: 3.4,
+                      duration: 1,
+                      ease: [0.6, 0.01, -0.05, 0.9]
+                    }
+                  }}
+                  className="col-lg-5 col-12">
                   <h1>
                     <SplitText
                       initial={{ y: "100%" }}
@@ -178,7 +189,7 @@ const MainPageSlider = (props) => {
                   >
                     <Button url={item.url} color={"white"} buttonDesc={item.buttonText}/>
                   </motion.div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>

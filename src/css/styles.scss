@@ -1852,6 +1852,7 @@ Team Slider Home And Team
 }
 
 .arrows-wrapper-services {
+
   position: relative;
   bottom: -22rem;
   @include for-tablet-portrait-up{
@@ -1871,7 +1872,7 @@ Team Slider Home And Team
 }
 
 .arrow-services.arrow-services--right {
-  left: 12.5% !important;
+  left: 1% !important;
   //bottom: 10rem;
   @include for-tablet-landscape-up {
     left: 10%;
@@ -1958,9 +1959,9 @@ Team Slider Home And Team
   height: 100vh;
   max-height: 100vh;
 
-  .container-fluid {
-    padding: 0;
-  }
+  //.container-fluid {
+  //  //padding: 0;
+  //}
 
   @include for-phone-only {
     .container-fluid {
@@ -2013,6 +2014,7 @@ Team Slider Home And Team
 .arrow-home {
   width: 15px;
   height: 20px;
+  margin: 0 15px;
   position: absolute;
   bottom: 10%;
   //transform: translateY(-50%);

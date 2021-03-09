@@ -1,6 +1,6 @@
 import React from "react"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-3.webp"
+import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-3b.webp"
 import Footer from "../components/Footer"
 import StickyBox from "react-sticky-box"
 import Button from "../components/CtaButton"
