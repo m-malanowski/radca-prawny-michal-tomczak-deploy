@@ -1,6 +1,5 @@
 import React from "react"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-3b.webp"
 import Footer from "../components/Footer"
 import StickyBox from "react-sticky-box"
 import Button from "../components/CtaButton"
@@ -10,6 +9,8 @@ import TriggerText from "../components/TriggerText"
 import { TriggerSplit } from "../components/TriggerSplit"
 import TriggerImg from "../components/TriggerImg"
 import aboutImg2 from "../assets/imgs/home-slider/porady-prawne-gdansk-3.webp"
+// import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-3b.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-3b.webp"
 
 const TeamPage = () => (
   <>

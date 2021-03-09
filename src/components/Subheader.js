@@ -2,6 +2,7 @@ import React from "react"
 import {motion} from "framer-motion";
 import {SplitText} from '../components/SplitText'
 import { splitTextVariants, transition } from '../components/variants'
+import Image from '../components/Image';
 
 const Subheader = ({pageTitle, subImg}) => {
   return (
@@ -15,7 +16,9 @@ const Subheader = ({pageTitle, subImg}) => {
         transition: {delay: .2, ...transition},
       }}
       className="subheader">
-      <img src={subImg} alt="radca prawny Gdańsk - porady prawne" />
+      {/*<img src={subImg} alt="radca prawny Gdańsk - porady prawne" />*/}
+      <Image alt="radca prawny Gdańsk - porady prawne" filename={subImg} />
+
       <div className="page-title container-fluid">
         <div className="col-lg-5 col-md-8">
           {/*<motion.h1*/}

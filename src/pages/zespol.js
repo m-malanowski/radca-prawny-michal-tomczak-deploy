@@ -1,11 +1,12 @@
 import React from "react"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-6c.webp"
 import Footer from "../components/Footer"
 import TeamSlider from "../components/TeamSlider"
 import SEO from "../components/SEO"
 import TriggerText from "../components/TriggerText"
 import { TriggerSplit } from "../components/TriggerSplit"
+// import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-6c.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-6c.webp"
 
 const TeamPage = () => (
   <>
@@ -87,8 +88,11 @@ const TeamPage = () => (
               </p>
             </div>
             <div className="description-second-element">
-              {/*<h2 className="quote">Ogólne informacje franzen yr, <em> literally beum incidunt </em> iurx natus*/}
-              {/*  perspiciatis soluta.</h2>*/}
+              <h2 className="quote">
+                <TriggerSplit threshold="1">
+                  franzen yr, literally beum incidunt iurx natus perspiciatis soluta.
+                </TriggerSplit>
+              </h2>
             </div>
           </div>
 

@@ -53,7 +53,8 @@
   --clr-primary-2: hsl(213, 92%, 12%);
   --clr-primary-3: hsl(213, 96%, 14%);
   //--clr-primary-4: hsl(213, 97%, 20%);
-  --clr-primary-4: #003864;
+  --clr-primary-4: hsl(213, 95%, 22%);
+  //--clr-primary-4: #003864;
   //--clr-primary-5: #012754;
   --clr-primary-5: #0152a1;
   /* lighter shades of primary color */
@@ -631,8 +632,11 @@ Page Title
     //padding-left: 1em;
     //text-indent: -1em;
   }
+ .gatsby-image-wrapper{
+   position: static !important;
+  }
 
-  img {
+  img{
     position: absolute;
     display: block;
     top: 0;
@@ -2217,7 +2221,7 @@ Team Slider Home And Team
   top: 0;
 }
 
-.zoom-out__slide img {
+.zoom-out__slide .gatsby-image-wrapper,  .zoom-out__slide img {
   //background-color: transparent;
   //width: 100%;
   //height: auto;
@@ -2231,9 +2235,7 @@ Team Slider Home And Team
   -moz-box-shadow: 30px 30px 60px var(--clr-primary-1);
   -webkit-box-shadow: 30px 30px 60px var(--clr-primary-1);
   -khtml-box-shadow: 30px 30px 60px var(--clr-primary-1);
-
-
-  position: fixed;
+  position: fixed !important;
   display: block;
   top: 0;
   left: 0;

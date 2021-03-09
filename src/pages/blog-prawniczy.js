@@ -3,11 +3,12 @@ import Image from "gatsby-image"
 import { graphql, Link } from "gatsby"
 import Subheader from "../components/Subheader"
 import Footer from "../components/Footer"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-2c.webp"
 import ButtonRight from "../components/CtaButton"
 import SEO from "../components/SEO"
 import TriggerText from "../components/TriggerText"
-import { TriggerSplit } from "../components/TriggerSplit"
+// import { TriggerSplit } from "../components/TriggerSplit"
+// import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-2c.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-2c.webp"
 
 const BlogPrawniczy = ({ data }) => (
   <>

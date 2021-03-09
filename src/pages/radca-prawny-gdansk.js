@@ -1,19 +1,15 @@
 import React from "react"
-// import { graphql, useStaticQuery } from "gatsby"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-1c.webp"
 import aboutImg1 from "../assets/imgs/home-slider/porady-prawne-gdansk.webp"
 import aboutImg2 from "../assets/imgs/home-slider/porady-prawne-gdansk-2.webp"
 import Footer from "../components/Footer"
 import Button from "../components/CtaButton"
-// import { useInView } from "react-intersection-observer"
-// import { motion, useAnimation } from "framer-motion"
 import TriggerText from "../components/TriggerText"
 import TriggerImg from "../components/TriggerImg"
 import SEO from "../components/SEO"
-// import { commonVariants, splitTextVariants } from "../components/variants"
 import { TriggerSplit } from "../components/TriggerSplit"
-
+// import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-1c.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-1c.webp"
 
 // const subHeaderImageName = "radca-prawny-gdansk-1.webp"
 //
@@ -39,7 +35,7 @@ const ProjectsPage = () => {
     "logo": "https://radcaprawnytomczak.pl/MichałTomczakRadcaPrawny.png",
     "sameAs": [
       "https://www.google.com/maps/d/u/0/edit?mid=1GCWjyo1AqP3O0iREMdxbuDu-HYKiDmeS&usp=sharing",
-      "https://www.facebook.com/Radca-Prawny-Gda%C5%84sk-Micha%C5%82-Tomczak-110583451087567",
+      "https://www.facebook.com/Radca-Prawny-Gda%C5%84sk-Micha%C5%82-Tomczak-110583451087567"
     ]
   }
   // const {
@@ -80,8 +76,9 @@ const ProjectsPage = () => {
           <div className="page-description-wrapper">
             <div className="page-content-description">
               <div className="description-first-element">
-                <p>
-                  <TriggerText threshold=".5">
+
+                <TriggerText threshold=".5">
+                  <p>
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -94,11 +91,13 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerText>
-                </p>
+                  </p>
+                </TriggerText>
+
                 <br /><br />
-                <p>
-                  <TriggerText threshold=".5">
+
+                <TriggerText threshold=".5">
+                  <p>
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -111,8 +110,9 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerText>
-                </p>
+                  </p>
+                </TriggerText>
+
 
               </div>
               <div className="description-second-element">
@@ -150,8 +150,9 @@ const ProjectsPage = () => {
           <div className="page-description-wrapper">
             <div className="page-content-description">
               <div className="description-first-element">
-                <p>
-                  <TriggerText threshold=".5">
+
+                <TriggerText threshold=".5">
+                  <p>
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -164,11 +165,13 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerText>
-                </p>
+                  </p>
+                </TriggerText>
+
                 <br /><br />
-                <p>
-                  <TriggerText threshold=".5">
+
+                <TriggerText threshold=".5">
+                  <p>
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -181,8 +184,9 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerText>
-                </p>
+                  </p>
+                </TriggerText>
+
               </div>
               <div className="description-second-element">
                 <TriggerText delay=".4" threshold="0.7">
@@ -223,8 +227,9 @@ const ProjectsPage = () => {
           <div className="page-description-wrapper">
             <div className="page-content-description">
               <div className="description-first-element">
-                <p>
-                  <TriggerText threshold=".5">
+
+                <TriggerText threshold=".5">
+                  <p>
                     leggings four loko, neutra bespoke lyft hashtag.
                     Slow-carb tilde taiyaki, tumblr normcore salvia craft beer kitsch brunch franzen gentrify blue
                     bottle
@@ -237,8 +242,9 @@ const ProjectsPage = () => {
                     Next level artisan four dollar toast occupy, mumblecore green juice XOXO polaroid cornhole kombucha.
                     Activated charcoal next level vinyl migas, unicorn meggings organic flannel four dollar toast
                     cold-pressed williamsburg selfies live-edge butcher tacos
-                  </TriggerText>
-                </p>
+                  </p>
+                </TriggerText>
+
               </div>
               <div className="description-second-element">
                 <h3 className="quote">

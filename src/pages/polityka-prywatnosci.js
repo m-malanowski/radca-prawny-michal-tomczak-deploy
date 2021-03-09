@@ -1,10 +1,11 @@
 import React from "react"
 import Subheader from "../components/Subheader"
-import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
 import Footer from "../components/Footer"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 import { graphql } from "gatsby"
+// import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-5c.webp"
 
 const PrivacyPage = ({ data }) => (
   <>
