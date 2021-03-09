@@ -12,7 +12,7 @@ const icons = {
 }
 const query = graphql`
     {
-        file(relativePath: {eq: "imgs/home-slider/radca-prawny-gdansk-7.webp"}) {
+        file(relativePath: {eq: "imgs/home-slider/radca-prawny-gdansk-9c.webp"}) {
             childImageSharp {
                 fluid(maxWidth: 1920, maxHeight: 1080, quality: 100) {
                     ...GatsbyImageSharpFluid
