@@ -28,7 +28,7 @@ const Footer = () => {
           </ul>
           <ul>
             <li><Link className="link-hover" to={"/polityka-prywatnosci"}>Polityka prywatności</Link></li>
-            <li><a className="link-hover" rel="noreferrer noopener" href="https://lumina.studio">By: lumina.studio</a></li>
+            <li>By:<a className="link-hover" rel="nofollow noopener" href="https://lumina.studio"> lumina.studio</a></li>
           </ul>
         </div>
       </TriggerText>
