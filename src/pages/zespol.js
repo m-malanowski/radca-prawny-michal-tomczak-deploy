@@ -6,7 +6,7 @@ import SEO from "../components/SEO"
 import TriggerText from "../components/TriggerText"
 import { TriggerSplit } from "../components/TriggerSplit"
 // import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-6c.webp"
-const subHeaderPhoto = "radca-prawny-gdansk-6c.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-d.webp"
 
 const TeamPage = () => (
   <>

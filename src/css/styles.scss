@@ -53,7 +53,10 @@
   --clr-primary-2: hsl(213, 92%, 12%);
   --clr-primary-3: hsl(213, 96%, 14%);
   //--clr-primary-4: hsl(213, 97%, 20%);
-  --clr-primary-4: hsl(213, 95%, 22%);
+  //--clr-primary-4: hsl(213, 95%, 22%);
+  //--clr-primary-4: #193d67;
+  --clr-primary-4: #0c233d;
+
   //--clr-primary-4: #003864;
   //--clr-primary-5: #012754;
   --clr-primary-5: #0152a1;
@@ -2064,7 +2067,7 @@ Team Slider Home And Team
 }
 
 .linesWrapper {
-  overflow: hidden;
+  //overflow: hidden;
   position: absolute;
   left: 10%;
   bottom: 10%;
@@ -2093,6 +2096,7 @@ Team Slider Home And Team
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .lines li:before {
@@ -2103,6 +2107,8 @@ Team Slider Home And Team
   //color: var(--clr-white);
   color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
+  display: block;
+  transform: translateY(-10px);
 }
 
 .lines li.active:before {
@@ -2141,7 +2147,9 @@ Team Slider Home And Team
   display: block;
   height: 2px;
   width: 0;
-  background: #ffffff;
+  //background: #dab277;
+  background: #fff;
+
   -webkit-animation: progressBar 8000ms linear forwards;
   animation: progressBar 8000ms linear forwards;
 }

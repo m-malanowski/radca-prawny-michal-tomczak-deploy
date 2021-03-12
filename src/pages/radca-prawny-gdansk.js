@@ -9,7 +9,7 @@ import TriggerImg from "../components/TriggerImg"
 import SEO from "../components/SEO"
 import { TriggerSplit } from "../components/TriggerSplit"
 // import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-1c.webp"
-const subHeaderPhoto = "radca-prawny-gdansk-1c.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-a.webp"
 
 // const subHeaderImageName = "radca-prawny-gdansk-1.webp"
 //

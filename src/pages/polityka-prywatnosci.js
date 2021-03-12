@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 import { graphql } from "gatsby"
 // import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-5.webp"
-const subHeaderPhoto = "radca-prawny-gdansk-5c.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-b.webp"
 
 const PrivacyPage = ({ data }) => (
   <>

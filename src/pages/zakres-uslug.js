@@ -10,7 +10,7 @@ import { TriggerSplit } from "../components/TriggerSplit"
 import TriggerImg from "../components/TriggerImg"
 import aboutImg2 from "../assets/imgs/home-slider/porady-prawne-gdansk-3.webp"
 // import subHeaderPhoto from "../assets/imgs/home-slider/radca-prawny-gdansk-3b.webp"
-const subHeaderPhoto = "radca-prawny-gdansk-3b.webp"
+const subHeaderPhoto = "radca-prawny-gdansk-g.webp"
 
 const TeamPage = () => (
   <>
