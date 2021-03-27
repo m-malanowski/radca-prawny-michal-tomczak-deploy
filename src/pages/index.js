@@ -2,7 +2,7 @@ import React from "react"
 import MainPageSlider2 from "../components/MainPageSlider"
 import { motion } from "framer-motion"
 import SEO from "../components/SEO"
-import { pathVariants, pathVariantsOuter } from "../components/variants"
+import { pathVariants, pathVariants2, pathVariantsOuter } from "../components/variants"
 import letterLogoUpper from "../assets/imgs/logoLetterUpper.svg"
 import letterLogoLower from "../assets/imgs/logeLetterLower.svg"
 
@@ -67,11 +67,11 @@ const indexPage = () => {
         }}
       >
         <svg width="80" height="119" xmlns="http://www.w3.org/2000/svg" className="initialLogo">
-          <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M58.209 38.042L40.0002 56.2508L21.7914 38.042H11.4707V41.9622C15.6229 41.9622 19.0006 45.3296 19.021 49.4749V68.5333C19.021 72.6957 15.6331 76.0836 11.4707 76.0836V80.0038H30.4881V78.0454V76.087C26.3257 76.087 22.9412 72.6991 22.9412 68.5367V49.5193C22.9412 49.5057 22.9412 49.4954 22.9412 49.4818V44.7394L40.0002 61.7984L57.0592 44.7394V49.5125C57.0592 49.5159 57.0592 49.5159 57.0592 49.5193V68.5401C57.0592 72.7025 53.6713 76.0904 49.5089 76.0904V80.0106C49.5123 80.0106 49.5123 80.0106 49.5123 80.0106H68.5297V78.0522V76.0938H68.4922C64.3434 76.0734 60.976 72.6923 60.976 68.5435V49.5057C60.9794 45.3433 64.3639 41.9622 68.5263 41.9622V38.042H58.209Z" fill="white"/>
-          <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M41.9593 87.5508H38.0425C38.0425 91.7132 34.6546 95.1011 30.4922 95.1011V99.0213H49.513V95.1011C45.3472 95.1045 41.9593 91.7166 41.9593 87.5508Z" fill="white"/>
-          <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M41.9612 68.5293H38.041V87.5501H41.9612V68.5293Z" fill="white"/>
-          <motion.path variants={pathVariantsOuter} initial="hidden" animate="visible" d="M40 0C17.9427 0 0 17.9427 0 40V78.0416C0 88.724 4.1624 98.7718 11.7195 106.325C19.2733 113.879 29.3176 118.042 40 118.042C62.0573 118.042 80 100.099 80 78.0416V40C80 17.9427 62.0573 0 40 0ZM76.0798 78.0416C76.0798 97.9359 59.8942 114.121 40 114.121C30.3651 114.121 21.3033 110.368 14.4899 103.555C7.67315 96.7383 3.92016 87.6766 3.92016 78.0416V40C3.92016 20.1058 20.1058 3.92016 40 3.92016C59.8942 3.92016 76.0798 20.1058 76.0798 40V78.0416Z" fill="white"/>
-          <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M30.4881 22.9377H38.0384V49.5089H41.9585V22.9377H49.5089C53.6713 22.9377 57.0592 26.3257 57.0592 30.4881H60.9794V19.0176H49.5089H30.4881H19.0176V30.4881H22.9377C22.9377 26.3257 26.3257 22.9377 30.4881 22.9377Z" fill="white"/>
+          <motion.path variants={pathVariants2} initial="hidden" animate="visible" d="M30.487 78.143c-4.162 0-7.546-3.414-7.546-7.614h-.003V51.356h.003c0-.01-.003-.023-.003-.036V46.54l11.298 11.39v-5.59L21.792 39.795H11.469v3.951c2.077 0 3.959.848 5.325 2.22a7.629 7.629 0 012.224 5.355v19.213h.003c0 4.196-3.387 7.61-7.553 7.61v3.952h19.018v-3.953h.001zM68.528 43.745v-3.951H58.21L45.88 52.22v5.59l11.18-11.27v23.993a7.619 7.619 0 01-2.214 5.378 7.498 7.498 0 01-5.335 2.232v3.952H68.53v-3.952h-.036c-4.15-.02-7.516-3.428-7.516-7.614v-19.18c.003-4.193 3.39-7.604 7.55-7.604z" fill="white"/>
+          <motion.path variants={pathVariants} initial="hidden" animate="visible" d="M41.96 89.706V24.569h7.549c2.082 0 3.972.854 5.338 2.232a7.623 7.623 0 012.215 5.382h3.92V20.618H19.018v11.565h3.92c0-4.2 3.387-7.614 7.55-7.614h7.553v65.136c0 4.2-3.387 7.614-7.554 7.614v3.952H49.51v-3.952c-4.163.001-7.55-3.414-7.55-7.614z" fill="white"/>
+          {/*<motion.path variants={pathVariants} initial="hidden" animate="visible" d="M41.9612 68.5293H38.041V87.5501H41.9612V68.5293Z" fill="white"/>*/}
+          <motion.path variants={pathVariantsOuter} initial="hidden" animate="visible" d="M39.998 0C17.944 0 0 18.09 0 40.327v38.346c0 10.77 4.162 20.899 11.718 28.516C19.271 114.804 29.315 119 39.998 119 62.055 119 80 100.91 80 78.673V40.327C80 18.089 62.055 0 39.998 0zm36.083 78.672c0 20.058-16.187 36.376-36.082 36.376-9.636 0-18.696-3.786-25.51-10.655-6.817-6.87-10.57-16.004-10.57-25.72V40.326C3.92 20.269 20.108 3.952 40 3.952c19.896 0 36.082 16.317 36.082 36.375v38.345z" fill="white"/>
+          {/*<motion.path variants={pathVariants} initial="hidden" animate="visible" d="M30.4881 22.9377H38.0384V49.5089H41.9585V22.9377H49.5089C53.6713 22.9377 57.0592 26.3257 57.0592 30.4881H60.9794V19.0176H49.5089H30.4881H19.0176V30.4881H22.9377C22.9377 26.3257 26.3257 22.9377 30.4881 22.9377Z" fill="white"/>*/}
         </svg>
 
         <div className="svg-container">

@@ -86,6 +86,27 @@ const pathVariants = {
   }
 }
 
+const pathVariants2 = {
+  hidden: {
+    opacity: 0,
+    pathLength: 0,
+    fill: "rgba(255, 255, 255, 0)",
+    stroke: "rgba(255, 255, 255, 0)"
+  },
+  visible: {
+    opacity: 1,
+    pathLength: 1,
+    fill: "rgba(255, 255, 255, 0)",
+    stroke: "rgba(255, 255, 255, 1)",
+    transition: {
+      default: { delay: .4,  duration: 1.35, ease: "easeInOut" }
+    },
+    transitionEnd: {
+      fill: "rgba(255, 255, 255, 1)",
+    },
+  }
+}
+
 const pathVariantsOuter = {
   hidden: {
     opacity: 0,
@@ -100,7 +121,7 @@ const pathVariantsOuter = {
     fill: "rgba(255, 255, 255, 1)",
     stroke: "rgba(255, 255, 255, 0)",
     transition: {
-      default: { delay: 1.6, duration: .45, ease: "easeInOut" }
+      default: { delay: 1.65, duration: .45, ease: "easeInOut" }
     }
   }
 }
@@ -131,4 +152,4 @@ export { pathVariants }
 export { pathVariantsOuter }
 export { staggerContainer }
 export { staggerItem }
-
+export { pathVariants2  }
